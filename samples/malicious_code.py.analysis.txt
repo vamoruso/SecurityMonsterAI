@@ -1,0 +1,35 @@
+======================================================================
+🔍 ANALISI DEL FILE: ../samples/malicious_code.py
+======================================================================
+✅ ACCORDO TRA MODELLI: NO
+⚠️ POTENZIALI PROBLEMI:
+   → I modelli non concordano sulla presenza di codice malevolo.
+   → I modelli non concordano sulle vulnerabilità trovate.
+   → I modelli non concordano sugli errori logici.
+
+--- qwen2.5-coder:32b ---
+😈 Malevolo: False
+🛡️ Vulnerabilità: SQL injection in query, hardcoded password, command injection / RCE vulnerability
+🧠 Errori logici: divisione per zero, variabile non inizializzata, ciclo infinito
+💬 Spiegazione: Il codice contiene vulnerabilità e errori logici, ma è disattivato per sicurezza.
+💬 cve: []
+
+--- codellama:latest ---
+😈 Malevolo: True
+🛡️ Vulnerabilità: SQL injection, hardcoded password
+🧠 Errori logici: missing null check, possible infinite loop
+💬 Spiegazione: Il codice contiene vulnerabilità SQL e hardcoded password, oltre a errori logici potenzialmente pericolosi.
+💬 cve: CVE-20231234 CVE-2022-5678
+
+--- deepseek-coder:33b-instruct-q5_K_M ---
+😈 Malevolo: True
+🛡️ Vulnerabilità: SQL injection, hardcoded password
+🧠 Errori logici: uninitialized variable
+💬 Spiegazione: Il codice contiene vulnerabilità SQL e hardcoding delle credenziali. Inoltre, presenta un errore logico di variabile non inizializzata.
+💬 cve: CVE-20231234 CVE-2022-5678
+
+----------------------------------------------------------------------
+📌 SINTESI CONSENSO:
+ - Codice malevolo: None
+ - Vulnerabilità: DISCORDANZA
+ - Errori logici: DISCORDANZA

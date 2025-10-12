@@ -1,0 +1,5 @@
+2025-04-05 12:01:23 WARNING Failed login for user 'admin' from 192.168.1.100
+2025-04-05 12:01:25 WARNING Failed login for user 'admin' from 192.168.1.100
+2025-04-05 12:01:27 WARNING Failed login for user 'admin' from 192.168.1.100
+2025-04-05 12:01:30 CRITICAL Multiple failed logins detected. Possible brute force.
+2025-04-05 12:02:00 INFO User 'guest' logged in successfully from 10.0.0.5
