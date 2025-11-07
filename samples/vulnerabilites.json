@@ -1,0 +1,50 @@
+[
+  {
+    "id": "vuln1",
+    "type": "XSS",
+    "description": "DOM-based XSS tramite inserimento diretto nel DOM senza sanitizzazione.",
+    "code": "const userInput = location.hash.substring(1);\ndocument.getElementById(\"output\").innerHTML = \"Benvenuto \" + userInput;",
+    "detectable_by": ["OWASP ZAP", "AI static analyzer", "DOMPurify test"],
+    "severity": "Alta"
+  },
+  {
+    "id": "vuln2",
+    "type": "CSRF",
+    "description": "Richiesta automatica verso endpoint critico senza token CSRF.",
+    "code": "const img = new Image();\nimg.src = \"https://vulnerabile.com/deleteAccount\";",
+    "detectable_by": ["Burp Suite", "OWASP CSRFGuard", "AI behavioral scanner"],
+    "severity": "Media"
+  },
+  {
+    "id": "vuln3",
+    "type": "Eval Injection",
+    "description": "Esecuzione dinamica di codice utente tramite eval().",
+    "code": "const userCode = prompt(\"Inserisci codice JS:\");\neval(userCode);",
+    "detectable_by": ["ESLint security plugin", "Semgrep", "AI static analyzer"],
+    "severity": "Alta"
+  },
+  {
+    "id": "vuln4",
+    "type": "Prototype Pollution",
+    "description": "Manipolazione dell'oggetto __proto__ tramite JSON non sicuro.",
+    "code": "const payload = JSON.parse('{\"__proto__\": {\"admin\": true}}');\nObject.assign({}, payload);",
+    "detectable_by": ["npm audit", "Retire.js", "AI dependency scanner"],
+    "severity": "Alta"
+  },
+  {
+    "id": "vuln5",
+    "type": "Insecure DOM Access",
+    "description": "Manipolazione diretta del DOM con ID controllato da input utente.",
+    "code": "const targetId = location.search.split(\"=\")[1];\ndocument.getElementById(targetId).style.display = \"none\";",
+    "detectable_by": ["AI DOM analyzer", "Semgrep", "Static code scanner"],
+    "severity": "Media"
+  },
+  {
+    "id": "vuln6",
+    "type": "Hardcoded Secrets",
+    "description": "Presenza di chiavi API hardcoded nel codice sorgente.",
+    "code": "const API_KEY = \"sk_test_1234567890abcdef\";",
+    "detectable_by": ["GitLeaks", "TruffleHog", "AI secret scanner"],
+    "severity": "Alta"
+  }
+]
