@@ -48,10 +48,6 @@
         // VULNERABILE: Inserisce direttamente HTML senza sanitizzazione
         document.getElementById('greeting').innerHTML = 
             '<h3>Ciao ' + userName + '! 👋</h3>';
-		//<![CDATA[
-        // Exploit: <img src=x onerror=alert('XSS')>
-        // Exploit: <script>alert(document.cookie)</script>
-		//]]>
     }
 
     // 🔴 VULNERABILITÀ #6: DOM-Based XSS
@@ -65,9 +61,6 @@
         document.getElementById('searchResults').innerHTML = 
             '<p>Risultati per: <strong>' + decodeURIComponent(searchTerm) + '</strong></p>' +
             '<p>Nessun risultato trovato.</p>';
-        //<![CDATA[
-        // Exploit: #<img src=x onerror=alert('DOM XSS')>
-		//]]>
     }
 
     // 🔴 VULNERABILITÀ #7: SQL Injection (simulato client-side)
