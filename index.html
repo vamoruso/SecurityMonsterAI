@@ -41,133 +41,7 @@
     
     <!-- 🔴 VULNERABILITÀ #4: jQuery vulnerabile (vecchia versione) -->
     <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-    <h1>🏦 Vulnerable Banking Application</h1>
-    
-    <div class="warning">
-        ⚠️ <strong>ATTENZIONE:</strong> Questa pagina contiene 10+ vulnerabilità intenzionali per scopo didattico!<br>
-        <strong>NON USARE</strong> in produzione! Solo per testing di security scanner.
-    </div>
-
-    <!-- ============================================ -->
-    <!-- 🔴 VULNERABILITÀ #5: Reflected XSS          -->
-    <!-- ============================================ -->
-    <section id="xss-section">
-        <h2>💉 1. Test XSS (Reflected)</h2>
-        <p>Inserisci il tuo nome per un saluto personalizzato:</p>
-        <input type="text" id="userName" placeholder="Il tuo nome">
-        <button onclick="displayGreeting()">Saluta</button>
-        <div id="greeting" class="output"></div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- 🔴 VULNERABILITÀ #6: DOM-Based XSS          -->
-    <!-- ============================================ -->
-    <section id="dom-xss">
-        <h2>🎯 2. Test DOM XSS</h2>
-        <p>Cerca un prodotto:</p>
-        <input type="text" id="searchQuery" placeholder="Cerca...">
-        <button onclick="performSearch()">Cerca</button>
-        <div id="searchResults" class="output"></div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- 🔴 VULNERABILITÀ #7: SQL Injection via Form -->
-    <!-- ============================================ -->
-    <section id="sql-injection">
-        <h2>🔑 3. Login (SQL Injection)</h2>
-        <form id="loginForm" onsubmit="return handleLogin(event)">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <div id="loginResult" class="output"></div>
-        
-        <div class="credentials">
-            💡 <strong>Hint per test:</strong><br>
-            Username: admin' OR '1'='1<br>
-            Password: qualsiasi cosa
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- 🔴 VULNERABILITÀ #8: Hardcoded Credentials  -->
-    <!-- ============================================ -->
-    <section id="hardcoded-creds">
-        <h2>🔐 4. Admin Panel (Credenziali Hardcoded)</h2>
-        <button onclick="accessAdminPanel()">Accedi Admin Panel</button>
-        <div id="adminResult" class="output"></div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- 🔴 VULNERABILITÀ #9: Sensitive Data Exposure -->
-    <!-- ============================================ -->
-    <section id="data-exposure">
-        <h2>💳 5. Informazioni Account</h2>
-        <button onclick="showAccountDetails()">Mostra Dettagli</button>
-        <div id="accountDetails" class="output"></div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- 🔴 VULNERABILITÀ #10: Insecure Direct Object Reference -->
-    <!-- ============================================ -->
-    <section id="idor">
-        <h2>📄 6. Visualizza Documento</h2>
-        <p>ID Documento:</p>
-        <input type="number" id="docId" value="1" min="1">
-        <button onclick="loadDocument()">Carica Documento</button>
-        <div id="documentContent" class="output"></div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- Lista vulnerabilità rilevabili                -->
-    <!-- ============================================ -->
-    <section class="vulnerability-list">
-        <h2>🐛 Vulnerabilità Presenti in Questa Pagina:</h2>
-        <ol>
-            <li><strong>Mixed Content</strong> - HTTP resources su HTTPS page</li>
-            <li><strong>Reflected XSS</strong> - Input non sanitizzato in displayGreeting()</li>
-            <li><strong>DOM-Based XSS</strong> - innerHTML manipulation in performSearch()</li>
-            <li><strong>SQL Injection</strong> - Query string construction nel form login</li>
-            <li><strong>Hardcoded Credentials</strong> - Admin password nel codice</li>
-            <li><strong>Sensitive Data Exposure</strong> - Credit card in plain text</li>
-            <li><strong>Insecure Direct Object Reference (IDOR)</strong> - Accesso documenti</li>
-            <li><strong>Missing CSRF Protection</strong> - Nessun token CSRF nei form</li>
-            <li><strong>Outdated Libraries</strong> - jQuery 1.6.4 (vulnerabile)</li>
-            <li><strong>Insecure External Resources</strong> - Script da fonte non attendibile</li>
-            <li><strong>Information Disclosure</strong> - Commenti HTML con info sensibili</li>
-            <li><strong>Client-Side Validation Only</strong> - Nessuna validazione server</li>
-        </ol>
-    </section>
-
-    <!-- 🔴 VULNERABILITÀ #11: Information Disclosure in HTML Comments -->
-    <!-- 
-    TODO: Remove before production!
-    Database credentials:
-    - Host: db.production.local
-    - User: root
-    - Password: SuperSecret123!
-    - Database: banking_prod
-    
-    API Keys:
-    - AWS: AKIAIOSFODNN7EXAMPLE
-    - Stripe: sk_live_51HxYzKJxYzKJxYzKJ
-    
-    Internal endpoints:
-    - /api/admin/users
-    - /api/admin/transactions
-    - /debug/show_all_data
-    -->
-
-</div>
-
-<!-- ============================================ -->
-<!-- JavaScript vulnerabile                       -->
-<!-- ============================================ -->
-<script>
+	<script>
     // 🔴 VULNERABILITÀ #5: Reflected XSS
     function displayGreeting() {
         const userName = document.getElementById('userName').value;
@@ -339,6 +213,133 @@
         console.log('⚠️ This page contains 15+ intentional vulnerabilities!');
     });
 </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>🏦 Vulnerable Banking Application</h1>
+    
+    <div class="warning">
+        ⚠️ <strong>ATTENZIONE:</strong> Questa pagina contiene 10+ vulnerabilità intenzionali per scopo didattico!<br>
+        <strong>NON USARE</strong> in produzione! Solo per testing di security scanner.
+    </div>
+
+    <!-- ============================================ -->
+    <!-- 🔴 VULNERABILITÀ #5: Reflected XSS          -->
+    <!-- ============================================ -->
+    <section id="xss-section">
+        <h2>💉 1. Test XSS (Reflected)</h2>
+        <p>Inserisci il tuo nome per un saluto personalizzato:</p>
+        <input type="text" id="userName" placeholder="Il tuo nome">
+        <button onclick="displayGreeting()">Saluta</button>
+        <div id="greeting" class="output"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 🔴 VULNERABILITÀ #6: DOM-Based XSS          -->
+    <!-- ============================================ -->
+    <section id="dom-xss">
+        <h2>🎯 2. Test DOM XSS</h2>
+        <p>Cerca un prodotto:</p>
+        <input type="text" id="searchQuery" placeholder="Cerca...">
+        <button onclick="performSearch()">Cerca</button>
+        <div id="searchResults" class="output"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 🔴 VULNERABILITÀ #7: SQL Injection via Form -->
+    <!-- ============================================ -->
+    <section id="sql-injection">
+        <h2>🔑 3. Login (SQL Injection)</h2>
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="loginResult" class="output"></div>
+        
+        <div class="credentials">
+            💡 <strong>Hint per test:</strong><br>
+            Username: admin' OR '1'='1<br>
+            Password: qualsiasi cosa
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 🔴 VULNERABILITÀ #8: Hardcoded Credentials  -->
+    <!-- ============================================ -->
+    <section id="hardcoded-creds">
+        <h2>🔐 4. Admin Panel (Credenziali Hardcoded)</h2>
+        <button onclick="accessAdminPanel()">Accedi Admin Panel</button>
+        <div id="adminResult" class="output"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 🔴 VULNERABILITÀ #9: Sensitive Data Exposure -->
+    <!-- ============================================ -->
+    <section id="data-exposure">
+        <h2>💳 5. Informazioni Account</h2>
+        <button onclick="showAccountDetails()">Mostra Dettagli</button>
+        <div id="accountDetails" class="output"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 🔴 VULNERABILITÀ #10: Insecure Direct Object Reference -->
+    <!-- ============================================ -->
+    <section id="idor">
+        <h2>📄 6. Visualizza Documento</h2>
+        <p>ID Documento:</p>
+        <input type="number" id="docId" value="1" min="1">
+        <button onclick="loadDocument()">Carica Documento</button>
+        <div id="documentContent" class="output"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- Lista vulnerabilità rilevabili                -->
+    <!-- ============================================ -->
+    <section class="vulnerability-list">
+        <h2>🐛 Vulnerabilità Presenti in Questa Pagina:</h2>
+        <ol>
+            <li><strong>Mixed Content</strong> - HTTP resources su HTTPS page</li>
+            <li><strong>Reflected XSS</strong> - Input non sanitizzato in displayGreeting()</li>
+            <li><strong>DOM-Based XSS</strong> - innerHTML manipulation in performSearch()</li>
+            <li><strong>SQL Injection</strong> - Query string construction nel form login</li>
+            <li><strong>Hardcoded Credentials</strong> - Admin password nel codice</li>
+            <li><strong>Sensitive Data Exposure</strong> - Credit card in plain text</li>
+            <li><strong>Insecure Direct Object Reference (IDOR)</strong> - Accesso documenti</li>
+            <li><strong>Missing CSRF Protection</strong> - Nessun token CSRF nei form</li>
+            <li><strong>Outdated Libraries</strong> - jQuery 1.6.4 (vulnerabile)</li>
+            <li><strong>Insecure External Resources</strong> - Script da fonte non attendibile</li>
+            <li><strong>Information Disclosure</strong> - Commenti HTML con info sensibili</li>
+            <li><strong>Client-Side Validation Only</strong> - Nessuna validazione server</li>
+        </ol>
+    </section>
+
+    <!-- 🔴 VULNERABILITÀ #11: Information Disclosure in HTML Comments -->
+    <!-- 
+    TODO: Remove before production!
+    Database credentials:
+    - Host: db.production.local
+    - User: root
+    - Password: SuperSecret123!
+    - Database: banking_prod
+    
+    API Keys:
+    - AWS: AKIAIOSFODNN7EXAMPLE
+    - Stripe: sk_live_51HxYzKJxYzKJxYzKJ
+    
+    Internal endpoints:
+    - /api/admin/users
+    - /api/admin/transactions
+    - /debug/show_all_data
+    -->
+
+</div>
+
+<!-- ============================================ -->
+<!-- JavaScript vulnerabile                       -->
+<!-- ============================================ -->
+
 
 <!-- Link a file esterni vulnerabili -->
 <script src="webresources/vulnerable-utils.js"></script>
