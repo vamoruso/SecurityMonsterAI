@@ -1,4 +1,4 @@
-//  VULNERABILITÀ #5: Reflected XSS
+//  VULNERABILITA' #5: Reflected XSS
     function displayGreeting() {
         const userName = document.getElementById('userName').value;
         // VULNERABILE: Inserisce direttamente HTML senza sanitizzazione
@@ -6,7 +6,7 @@
             '<h3>Ciao ' + userName + '! 👋</h3>';
     }
 
-    //  VULNERABILITÀ #6: DOM-Based XSS
+    //  VULNERABILITA' #6: DOM-Based XSS
     function performSearch() {
         const query = document.getElementById('searchQuery').value;
         // VULNERABILE: location.hash può essere manipolato
@@ -19,7 +19,7 @@
             '<p>Nessun risultato trovato.</p>';
     }
 
-    //  VULNERABILITÀ #7: SQL Injection (simulato client-side)
+    //  VULNERABILITA' #7: SQL Injection (simulato client-side)
     function handleLogin(event) {
         event.preventDefault();
         const username = document.getElementById('username').value;
@@ -49,7 +49,7 @@
         return false;
     }
 
-    //  VULNERABILITÀ #8: Hardcoded Credentials
+    //  VULNERABILITA' #8: Hardcoded Credentials
     function accessAdminPanel() {
         // VULNERABILE: Credenziali hardcoded nel JavaScript
         const ADMIN_USERNAME = "admin";
@@ -68,7 +68,7 @@
             '</div>';
     }
 
-    //  VULNERABILITÀ #9: Sensitive Data Exposure
+    //  VULNERABILITA' #9: Sensitive Data Exposure
     function showAccountDetails() {
         // VULNERABILE: Dati sensibili in chiaro
         const accountData = {
@@ -93,7 +93,7 @@
             '</div>';
     }
 
-    //  VULNERABILITÀ #10: Insecure Direct Object Reference (IDOR)
+    //  VULNERABILITA' #10: Insecure Direct Object Reference (IDOR)
     function loadDocument() {
         const docId = document.getElementById('docId').value;
         
@@ -117,13 +117,13 @@
             '</div>';
     }
 
-    //  VULNERABILITÀ #12: Insecure Random
+    //  VULNERABILITA' #12: Insecure Random
     function generateToken() {
         // VULNERABILE: Math.random() non è crittograficamente sicuro
         return Math.random().toString(36).substring(2, 15);
     }
 
-    //  VULNERABILITÀ #13: Local Storage con dati sensibili
+    //  VULNERABILITA' #13: Local Storage con dati sensibili
     function saveCredentials() {
         // VULNERABILE: Dati sensibili in localStorage
         localStorage.setItem('username', 'admin');
@@ -132,7 +132,7 @@
         localStorage.setItem('creditCard', '4532-1234-5678-9012');
     }
 
-    //  VULNERABILITÀ #15: Eval con input utente (estremo)
+    //  VULNERABILITA' #15: Eval con input utente (estremo)
     function calculateExpression() {
         const expr = prompt('Inserisci espressione matematica:');
         if (expr) {
@@ -150,11 +150,11 @@
 
 /**
  *  VULNERABLE UTILITIES
- * File JavaScript con multiple vulnerabilità per testing
+ * File JavaScript con multiple vulnerabilitA' per testing
  * ATTENZIONE: NON USARE IN PRODUZIONE!
  */
 
-//  VULNERABILITÀ #1: Hardcoded API Keys
+//  VULNERABILITA' #1: Hardcoded API Keys
 const CONFIG = {
     apiKey: 'AIzaSyDXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
     secretKey: 'sk_live_51HxYzKJxYzKJxYzKJxYzKJxYzKJ',
@@ -165,14 +165,14 @@ const CONFIG = {
     dbPassword: 'MySQLPass2024!'
 };
 
-//  VULNERABILITÀ #2: Insecure Cookie Handling
+//  VULNERABILITA' #2: Insecure Cookie Handling
 function setCookie(name, value) {
     // VULNERABILE: Cookie senza flags sicuri
     document.cookie = name + "=" + value + "; path=/";
     // Manca: Secure; HttpOnly; SameSite
 }
 
-//  VULNERABILITÀ #3: XSS in cookie reading
+//  VULNERABILITA' #3: XSS in cookie reading
 function getCookie(name) {
     const value = "; " + document.cookie;
     const parts = value.split("; " + name + "=");
@@ -182,7 +182,7 @@ function getCookie(name) {
     }
 }
 
-//  VULNERABILITÀ #4: Insecure AJAX without CSRF
+//  VULNERABILITA' #4: Insecure AJAX without CSRF
 function makeApiCall(endpoint, data) {
     // VULNERABILE: Nessun CSRF token
     fetch(CONFIG.apiEndpoint + endpoint, {
@@ -195,20 +195,20 @@ function makeApiCall(endpoint, data) {
     })
     .then(response => response.json())
     .then(data => {
-        //  VULNERABILITÀ #5: eval con response
+        //  VULNERABILITA' #5: eval con response
         eval('var result = ' + JSON.stringify(data));
         console.log(result);
     });
 }
 
-//  VULNERABILITÀ #6: Insecure redirect
+//  VULNERABILITA' #6: Insecure redirect
 function redirectTo(url) {
     // VULNERABILE: Open redirect
     window.location = url;
     // Nessuna validazione dell'URL
 }
 
-//  VULNERABILITÀ #7: Client-side authentication
+//  VULNERABILITA' #7: Client-side authentication
 function authenticate(username, password) {
     // VULNERABILE: Autenticazione lato client
     const validUsers = {
@@ -225,7 +225,7 @@ function authenticate(username, password) {
     return false;
 }
 
-//  VULNERABILITÀ #8: Weak encryption
+//  VULNERABILITA' #8: Weak encryption
 function encryptData(data) {
     // VULNERABILE: ROT13 non è crittografia!
     return data.replace(/[a-zA-Z]/g, function(c) {
@@ -235,7 +235,7 @@ function encryptData(data) {
     });
 }
 
-//  VULNERABILITÀ #9: SQL Query builder (client-side)
+//  VULNERABILITA' #9: SQL Query builder (client-side)
 function buildQuery(table, conditions) {
     // VULNERABILE: SQL Injection
     let query = "SELECT * FROM " + table + " WHERE ";
@@ -249,13 +249,13 @@ function buildQuery(table, conditions) {
     return query;
 }
 
-//  VULNERABILITÀ #10: Insecure random
+//  VULNERABILITA' #10: Insecure random
 function generateSessionId() {
     // VULNERABILE: Math.random() predicibile
     return 'sess_' + Math.random().toString(36).substring(2, 15);
 }
 
-//  VULNERABILITÀ #11: Command injection (simulato)
+//  VULNERABILITA' #11: Command injection (simulato)
 function executeCommand(cmd) {
     // In un context Node.js sarebbe:
     // require('child_process').exec(cmd);
@@ -263,7 +263,7 @@ function executeCommand(cmd) {
     // VULNERABILE: Nessuna validazione comando
 }
 
-//  VULNERABILITÀ #12: Path traversal
+//  VULNERABILITA' #12: Path traversal
 function loadFile(filename) {
     // VULNERABILE: Path traversal
     fetch('/api/file?path=' + filename)
@@ -274,7 +274,7 @@ function loadFile(filename) {
     // Exploit: filename = '../../../etc/passwd'
 }
 
-//  VULNERABILITÀ #13: Prototype pollution
+//  VULNERABILITA' #13: Prototype pollution
 function merge(target, source) {
     // VULNERABILE: Prototype pollution
     for (let key in source) {
@@ -287,13 +287,13 @@ function merge(target, source) {
     return target;
 }
 
-//  VULNERABILITÀ #14: Insecure deserialization
+//  VULNERABILITA' #14: Insecure deserialization
 function deserialize(serialized) {
     // VULNERABILE: eval per deserializzazione
     return eval('(' + serialized + ')');
 }
 
-//  VULNERABILITÀ #15: CORS misconfiguration (headers)
+//  VULNERABILITA' #15: CORS misconfiguration (headers)
 function setupCORS() {
     // In un server questo sarebbe pericoloso:
     // res.setHeader('Access-Control-Allow-Origin', '*');
@@ -301,7 +301,7 @@ function setupCORS() {
     console.log('CORS: Allow all origins with credentials - INSECURE!');
 }
 
-//  VULNERABILITÀ #16: Sensitive data in URL
+//  VULNERABILITA' #16: Sensitive data in URL
 function trackUser(userId, email, creditCard) {
     // VULNERABILE: Dati sensibili in URL (analytics)
     const trackingUrl = 'https://analytics.example.com/track?user=' + userId + 
@@ -312,7 +312,7 @@ function trackUser(userId, email, creditCard) {
     fetch(trackingUrl);
 }
 
-//  VULNERABILITÀ #17: Race condition
+//  VULNERABILITA' #17: Race condition
 let balance = 1000;
 
 function withdraw(amount) {
@@ -328,7 +328,7 @@ function withdraw(amount) {
     return false;
 }
 
-//  VULNERABILITÀ #18: Information disclosure
+//  VULNERABILITA' #18: Information disclosure
 function getErrorDetails(error) {
     // VULNERABILE: Stack trace esposti
     return {
@@ -344,7 +344,7 @@ function getErrorDetails(error) {
     };
 }
 
-//  VULNERABILITÀ #19: Timing attack
+//  VULNERABILITA' #19: Timing attack
 function comparePassword(input, stored) {
     // VULNERABILE: Timing attack
     if (input.length !== stored.length) {
@@ -359,7 +359,7 @@ function comparePassword(input, stored) {
     return true;
 }
 
-//  VULNERABILITÀ #20: Clickjacking vulnerability
+//  VULNERABILITA' #20: Clickjacking vulnerability
 function allowFraming() {
     // Manca: X-Frame-Options header
     // Manca: Content-Security-Policy frame-ancestors
