@@ -21,17 +21,10 @@
 
 ### - Nell'ambiente virtuale *(venv) D:\Users\vincw\SecurityMonster*  eseguire il comando per installare tutti i pacchetti necessari
     pip install requirements.txt 
-### - Nell'ambiente virtuale *(venv) D:\Users\vincw\SecurityMonster*  eseguire il comando per installare il pacchetto per l'uso del protocollo https
-    pip install pyopenssl 
-### - Nell'ambiente virtuale *(venv) D:\Users\vincw\SecurityMonster*  eseguire il comando per installare il modello spaCy
-    python -m spacy download en_core_web_md
-### - Per avviare il web server Flask eseguire il comando
-````Shell
-  python.exe D:\Users\vincw\SecurityMonster\IAWebAppFlaskServer.py
-````
 
 > [!NOTE]
-> Il server sarà in ascolto sulla porta 8000 all'indirizzo https://localhost:8000 
+> Il server ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434
+> Il server ClamAV deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
 
 
 ## Schema progetto e tecnologie
@@ -98,19 +91,19 @@
 
 ### Media
 
-• Tutti gli screenshot del codice utilizzato in questo README sono stati realizzati da me su dispostivo ***Android 13 modello OPPO A74 5G***
+• Tutti gli screenshot del codice utilizzato in questo README sono stati realizzati da me su dispostivo Windows 11
 
 ### Ringraziamenti
 
 * [Hugging face Adamcodd OCR-free Document Understanding Transformer](https://huggingface.co/AdamCodd/donut-receipts-extract).
-* [Hugging face BERT model for the Italian language](https://huggingface.co/osiria/bert-italian-cased-question-answering)
-* [https://github.com/daveyjh](https://github.com/mdbootstrap/bootstrap-chat) - Per la UX del chatbot.
+* [Radare2](https://github.com/mdbootstrap/bootstrap-chat](https://github.com/radareorg/radare2).
+* [R2ai](https://github.com/radareorg/r2ai)
 
 
 ---
 ###
 
-<h2 align="left">Vincenzo Amoruso <cite>2024</cite></h2>
+<h2 align="left">Vincenzo Amoruso <cite>2025</cite></h2>
 
 
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat=markdown&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/vamoruso/SecurityMonster?style=flat) ![GitHub last commit](https://img.shields.io/github/last-commit/vamoruso/SecurityMonster?style=flat)  ![GitHub Repo stars](https://img.shields.io/github/stars/vamoruso/SecurityMonster?style=social)  
