@@ -23,7 +23,7 @@
     pip install requirements.txt 
 
 > [!NOTE]
-> Il server ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
+> Il server Ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
 > Il server ClamAV deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
 
 
