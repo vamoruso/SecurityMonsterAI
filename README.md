@@ -31,7 +31,7 @@
 
 ###
 
-![Schema](documentation/SchemaArchitteturaTesi.png)
+![Schema](documentation/SchemaArchitteturaTesi.jpg)
 
 <div align="left">
  <img width="12" />
