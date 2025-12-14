@@ -1,0 +1,2 @@
+Packet 449: TCP 192.168.10.4:57575 -> 185.48.56.2:80 | "POST /upload.php" | Payload: 2.7MB ZIP archive
+2025-11-14 18:47:39 INFO Large outbound data transfer logged to suspicious destination

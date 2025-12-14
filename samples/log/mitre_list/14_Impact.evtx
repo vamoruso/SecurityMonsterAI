@@ -1,0 +1,5 @@
+<EventID>4724</EventID>
+<TimeCreated>2025-11-14T19:09:57Z</TimeCreated>
+<AccountName>EMERG-ADMIN</AccountName>
+<Description>Critical files encrypted by process "ransomware_payload.exe"</Description>
+2025-11-14 19:10:00 ERROR ALERT Multiple files deleted/encrypted in directory \\server\data

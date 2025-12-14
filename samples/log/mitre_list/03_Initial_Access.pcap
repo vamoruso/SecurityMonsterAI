@@ -1,0 +1,2 @@
+Packet 18: SMTP DATA from 88.32.44.22 -> victim@company.com | Subject: "HR Policy Update" | Attachment: payroll-update.zip (MD5: xxxxx)
+Packet 19: TCP SYN 88.32.44.22:587 -> 192.168.1.5:25 | ","Unknown filetype attempted upload"

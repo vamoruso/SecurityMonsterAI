@@ -1,0 +1,2 @@
+2025-11-14 18:25:17 ALERT Outbound connection to random domain: hxxp://malicious-c2.com:443 POST /beacon1
+Packet 231: Dest IP 67.22.33.90 TCP 443 | Data exfil pattern matches C2 beacon

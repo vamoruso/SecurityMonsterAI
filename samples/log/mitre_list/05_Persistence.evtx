@@ -1,0 +1,5 @@
+<EventID>7045</EventID>
+<TimeCreated>2025-11-14T15:48:19Z</TimeCreated>
+<ServiceName>WorkerUpdateService</ServiceName>
+<BinaryPath>C:\Temp\hiddenTask.exe</BinaryPath>
+<Description>New service installed for persistence</Description>

@@ -1,0 +1,3 @@
+2025-11-14 17:22:15 INFO User svchost executed: net user /domain
+2025-11-14 17:23:01 INFO Command run: net view /all
+2025-11-14 17:23:15 INFO Tasklist executed by user svc-backup

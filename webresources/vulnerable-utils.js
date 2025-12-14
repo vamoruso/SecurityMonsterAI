@@ -1,4 +1,4 @@
-//  VULNERABILITA #5: Reflected XSS
+//  VULNERABILITA #1: Reflected XSS
     function displayGreeting() {
         const userName = document.getElementById('userName').value;
         // VULNERABILE: Inserisce direttamente HTML senza sanitizzazione
@@ -6,7 +6,7 @@
             '<h3>Ciao ' + userName + '! 👋</h3>';
     }
 
-    //  VULNERABILITA #6: DOM-Based XSS
+    //  VULNERABILITA #2: DOM-Based XSS
     function performSearch() {
         const query = document.getElementById('searchQuery').value;
         // VULNERABILE: location.hash puo essere manipolato
@@ -19,7 +19,7 @@
             '<p>Nessun risultato trovato.</p>';
     }
 
-    //  VULNERABILITA #7: SQL Injection (simulato client-side)
+    //  VULNERABILITA #3: SQL Injection (simulato client-side)
     function handleLogin(event) {
         event.preventDefault();
         const username = document.getElementById('username').value;
@@ -49,7 +49,7 @@
         return false;
     }
 
-    //  VULNERABILITA #8: Hardcoded Credentials
+    //  VULNERABILITA #4: Hardcoded Credentials
     function accessAdminPanel() {
         // VULNERABILE: Credenziali hardcoded nel JavaScript
         const ADMIN_USERNAME = "admin";
@@ -68,7 +68,7 @@
             '</div>';
     }
 
-    //  VULNERABILITA #9: Sensitive Data Exposure
+    //  VULNERABILITA #5: Sensitive Data Exposure
     function showAccountDetails() {
         // VULNERABILE: Dati sensibili in chiaro
         const accountData = {
@@ -93,7 +93,7 @@
             '</div>';
     }
 
-    //  VULNERABILITA #10: Insecure Direct Object Reference (IDOR)
+    //  VULNERABILITA #6: Insecure Direct Object Reference (IDOR)
     function loadDocument() {
         const docId = document.getElementById('docId').value;
         
@@ -117,13 +117,13 @@
             '</div>';
     }
 
-    //  VULNERABILITA #12: Insecure Random
+    //  VULNERABILITA #7: Insecure Random
     function generateToken() {
         // VULNERABILE: Math.random() non è crittograficamente sicuro
         return Math.random().toString(36).substring(2, 15);
     }
 
-    //  VULNERABILITA #13: Local Storage con dati sensibili
+    //  VULNERABILITA #8: Local Storage con dati sensibili
     function saveCredentials() {
         // VULNERABILE: Dati sensibili in localStorage
         localStorage.setItem('username', 'admin');
@@ -132,7 +132,7 @@
         localStorage.setItem('creditCard', '4532-1234-5678-9012');
     }
 
-    //  VULNERABILITA #15: Eval con input utente (estremo)
+    //  VULNERABILITA #9: Eval con input utente (estremo)
     function calculateExpression() {
         const expr = prompt('Inserisci espressione matematica:');
         if (expr) {

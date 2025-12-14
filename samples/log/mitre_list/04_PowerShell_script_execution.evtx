@@ -1,0 +1,5 @@
+<EventID>4688</EventID>
+<TimeCreated>2025-11-14T15:24:06Z</TimeCreated>
+<ProcessName>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</ProcessName>
+<CommandLine>powershell -encodedCommand SQBmACgAIAAoAHQAcgApACkAewAuLi59</CommandLine>
+<Description>Suspicious PowerShell execution detected with base64 encoded payload</Description>

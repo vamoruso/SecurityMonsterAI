@@ -1,0 +1,5 @@
+<EventID>4672</EventID>
+<TimeCreated>2025-11-14T16:08:50Z</TimeCreated>
+<AccountName>svc-backup</AccountName>
+<SpecialPrivilegesAssigned>SeDebugPrivilege, SeSystemEnvironmentPrivilege</SpecialPrivilegesAssigned>
+<Description>User assigned high-level privileges; potential escalation</Description>

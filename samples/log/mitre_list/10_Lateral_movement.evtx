@@ -1,0 +1,6 @@
+<EventID>4624</EventID>
+<TimeCreated>2025-11-14T17:41:09Z</TimeCreated>
+<AccountName>operator</AccountName>
+<SourceNetworkAddress>10.1.2.4</SourceNetworkAddress>
+<LogonType>10</LogonType>
+<Description>Remote interactive logon - possible RDP or pass-the-hash attack</Description>

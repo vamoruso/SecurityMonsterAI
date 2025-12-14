@@ -1,0 +1,2 @@
+2025-11-14 18:02:14 INFO User operator ran script: copy *.docx \\malware-share\out\
+2025-11-14 18:16:56 INFO Downloads from endpoint 10.1.2.4: suspicious compressed archive collected
