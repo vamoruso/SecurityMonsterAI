@@ -57,16 +57,13 @@
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/source/screen11_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/source/screen12_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
 </tr>  
-     <tr>
-      <td colspan=11>[Video](https://youtu.be/9S8fvFy-tFI)</td> 
-   </tr> 
 </table>
     
 ### SecurityMonster analisi logs
 
 <table>
    <tr>
-   <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen1_avvio.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen1_avvio.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen2_01_Reconnisance.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen3_02_Resource.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen4_03_Initial_Access.png" style="width: 50%; height: 50%" /> </td>
@@ -76,16 +73,18 @@
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen8_07_Defence_Evasion.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen9_08_Credential_Access.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen10_09_Discovery.png" style="width: 50%; height: 50%" /> </td>
+</tr><tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen11_10_Lateral_movement.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen12_11_Collection.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen13_12_Command_and_control.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen14_13_Exfiltration.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen15_14_Impact.png" style="width: 50%; height: 50%" /> </td>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen16_riepilogo.png" style="width: 50%; height: 50%" /> </td>
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
    </tr>
-   <tr>
-      <td colspan=16>[Video](https://youtu.be/PZYo-wV8GzY)</td> 
-   </tr> 
 </table>  
     
 ### SecurityMonster analisi binary ed eseguibili
@@ -101,6 +100,7 @@
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/06b_radare_prompt_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/06_radare_analsi_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/07_radare2_malwarereport1_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+</tr><tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/08_radare2_malware_indicators_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/09_radare2_suspicious_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/10_radare2_network_c2_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
@@ -111,6 +111,7 @@
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/13_Packer_a.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionLief.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionLief_AI.png" style="width: 50%; height: 50%"/> </td> 
+</tr><tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionR2ai.png" style="width: 50%; height: 50%"/> </td> 
@@ -120,15 +121,18 @@
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareLief.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareLief_AI.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareR2ai.png" style="width: 50%; height: 50%"/> </td> 
+</tr><tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_Ransomeware_so.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanDetector.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanFolder.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanLike_o.png" style="width: 50%; height: 50%"/> </td> 
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
 </tr>  
-     <tr>
-      <td colspan=34>[Video](https://youtu.be/XBB3AnkUHHY)</td> 
-   </tr> 
 </table>   
 
 ###
