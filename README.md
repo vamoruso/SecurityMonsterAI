@@ -140,7 +140,8 @@
 • Tutti gli screenshot del codice utilizzato in questo README sono stati realizzati da me su dispostivo Windows 11 a 64bit 32GB RAM Processore	Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz, 2208 Mhz, 6 core, 12 processori logici
 
 ### Ringraziamenti
-
+* ***Pancake***
+* ***Prof. Davide Berardi***
 * [Radare2](https://github.com/radareorg/radare2).
 * [R2ai](https://github.com/radareorg/r2ai)
 
