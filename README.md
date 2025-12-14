@@ -91,40 +91,40 @@
 ### SecurityMonster analisi binary ed eseguibili
 <table>
 <tr>
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/01_avvio_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/02_clamav_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/03_MalwareDectector_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/03_r2ai_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/03_yara_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/04_lief_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/05_lief_analsi_entropia_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/06b_radare_prompt_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/06_radare_analsi_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/07_radare2_malwarereport1_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/08_radare2_malware_indicators_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/09_radare2_suspicious_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/10_radare2_network_c2_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/11_radare2_obfuscation_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_PackerLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_PackerMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_PackerR2ai.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_Packer_a.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionLief.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionLief_AI.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionR2ai.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_Evasion_dll.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareDetector.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareFolder.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareLief.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareLief_AI.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareR2ai.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_Ransomeware_so.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanDetector.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanFolder.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanLike_o.png" style="width: 50%; height: 50%"/> </td> 
-<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/01_avvio_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/02_clamav_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/03_MalwareDectector_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/03_r2ai_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/03_yara_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/04_lief_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/05_lief_analsi_entropia_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/06b_radare_prompt_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/06_radare_analsi_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/07_radare2_malwarereport1_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/08_radare2_malware_indicators_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/09_radare2_suspicious_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/10_radare2_network_c2_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/11_radare2_obfuscation_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/13_PackerLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/13_PackerMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/13_PackerR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/13_Packer_a.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionLief.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionLief_AI.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_EvasionR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/14_Evasion_dll.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareLief.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareLief_AI.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_RansomewareR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/15_Ransomeware_so.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanLike_o.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/16_TrojanR2ai.png" style="width: 50%; height: 50%"/> </td> 
 </tr>  
      <tr>
       <td colspan=34>[Video](https://youtu.be/XBB3AnkUHHY)</td> 
