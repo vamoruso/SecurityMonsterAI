@@ -23,7 +23,7 @@
     pip install requirements.txt 
 
 > [!NOTE]
-> Il server ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434
+> Il server ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
 > Il server ClamAV deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
 
 
@@ -31,7 +31,7 @@
 
 ###
 
-![Schema](documentation/SchemaArchitteturaTe.png)
+![Schema](documentation/SchemaArchitteturaTesi.png)
 
 <div align="left">
  <img width="12" />
@@ -41,21 +41,28 @@
 
 ## Screenshots e video di test
 
-### Applicazione IA con OCR per riconoscimento uno scontrino fiscale
+### SecurityMonster analisi codice sorgente
     
 <table>
 <tr>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/OCR/OCR_screen_1_1.png" style="width: 50%; height: 50%" /> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/OCR/OCR_screen_1.png" style="width: 50%; height: 50%" /> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/OCR/OCR_screen_2.png" style="width: 50%; height: 50%" /> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/OCR/OCR_screen_3.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen1_source_analisi.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen2_source_analisi.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen3_source_analisi.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen4_source_analisi.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen5_source_analisi.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen6_source_analisi.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen7_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen9_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen10_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen11_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/source/screen12_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
 </tr>  
      <tr>
-      <td colspan=4>[Video](https://youtu.be/9S8fvFy-tFI)</td> 
+      <td colspan=11>[Video](https://youtu.be/9S8fvFy-tFI)</td> 
    </tr> 
 </table>
     
-### Applicazione pratica di IA con analisi del testo di un manuale pdf
+### SecurityMonster analisi logs
 
 <table>
    <tr>
@@ -70,8 +77,7 @@
    </tr> 
 </table>  
     
-### Applicazione IA di WebSpeech API ed analisi NLP con Spacy
-
+### SecurityMonster analisi binary ed eseguibili
 <table>
 <tr>
 <td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/absences_vocal_command/AssenzeDaComandoVocale_screen1.png" style="width: 50%; height: 50%"/> </td>
@@ -95,8 +101,7 @@
 
 ### Ringraziamenti
 
-* [Hugging face Adamcodd OCR-free Document Understanding Transformer](https://huggingface.co/AdamCodd/donut-receipts-extract).
-* [Radare2](https://github.com/mdbootstrap/bootstrap-chat](https://github.com/radareorg/radare2).
+* [Radare2](https://github.com/radareorg/radare2).
 * [R2ai](https://github.com/radareorg/r2ai)
 
 
