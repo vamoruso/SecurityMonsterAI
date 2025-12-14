@@ -1,0 +1,44 @@
+ Il volume nell'unit… D Š DATA
+ Numero di serie del volume: B4B4-D46B
+
+ Directory di D:\Users\vincw\OneDrive\Documents\GitHub\SecurityMonsterAI\screenshoots\binary
+
+14/12/2025  18:03    <DIR>          .
+14/12/2025  18:02    <DIR>          ..
+01/12/2025  20:18             9.374 01_avvio_eicar_pe.png
+02/12/2025  17:13            28.620 02_clamav_eicar_pe.png
+13/12/2025  13:09            61.033 03_MalwareDectector_eicar_pe.png
+13/12/2025  15:40           127.130 03_r2ai_eicar_pe.png
+02/12/2025  17:17             9.503 03_yara_eicar_pe.png
+02/12/2025  17:22           100.353 04_lief_eicar_pe.png
+02/12/2025  17:28            98.267 05_lief_analsi_entropia_ia_eicar_pe.png
+11/12/2025  13:17            78.778 06b_radare_prompt_eicar_pe.png
+02/12/2025  21:21            33.215 06_radare_analsi_ia_eicar_pe.png
+03/12/2025  09:00            35.655 07_radare2_malwarereport1_ia_eicar_pe.png
+03/12/2025  09:02            74.242 08_radare2_malware_indicators_ia_eicar_pe.png
+03/12/2025  09:03            68.387 09_radare2_suspicious_api_ia_eicar_pe.png
+03/12/2025  09:04            71.483 10_radare2_network_c2_api_ia_eicar_pe.png
+03/12/2025  09:05            97.041 11_radare2_obfuscation_ia_eicar_pe.png
+11/12/2025  17:57            25.387 13_PackerLikeFolder.png
+11/12/2025  18:48            35.232 13_PackerMalwareDetector.png
+11/12/2025  19:09           262.414 13_PackerR2ai.png
+11/12/2025  18:09            35.517 13_Packer_a.png
+12/12/2025  10:47            46.822 14_EvasionLief.png
+12/12/2025  11:07            62.126 14_EvasionLief_AI.png
+12/12/2025  08:36            44.487 14_EvasionLikeFolder.png
+12/12/2025  11:41            38.776 14_EvasionMalwareDetector.png
+12/12/2025  14:13           112.670 14_EvasionR2ai.png
+12/12/2025  10:32            33.727 14_Evasion_dll.png
+12/12/2025  18:05            41.531 15_RansomewareDetector.png
+12/12/2025  15:49            50.085 15_RansomewareFolder.png
+12/12/2025  17:39            40.301 15_RansomewareLief.png
+12/12/2025  17:49            60.571 15_RansomewareLief_AI.png
+12/12/2025  18:18           106.548 15_RansomewareR2ai.png
+12/12/2025  17:32            34.675 15_Ransomeware_so.png
+12/12/2025  19:09            35.973 16_TrojanDetector.png
+12/12/2025  16:29            43.320 16_TrojanFolder.png
+12/12/2025  19:01            35.547 16_TrojanLike_o.png
+12/12/2025  19:20            84.816 16_TrojanR2ai.png
+14/12/2025  18:03                 0 lst
+              35 File      2.123.606 byte
+               2 Directory  1.056.155.389.952 byte disponibili
