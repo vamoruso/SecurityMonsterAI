@@ -66,28 +66,68 @@
 
 <table>
    <tr>
-    <td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/Chatbot/Chatbot_screen1.png" style="width: 50%; height: 50%"/> </td>
-    <td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/Chatbot/Chatbot_screen2.png" style="width: 50%; height: 50%"/> </td>
-    <td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/Chatbot/Chatbot_screen3.png" style="width: 50%; height: 50%"/> </td>
-    <td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/Chatbot/Chatbot_screen4.png" style="width: 50%; height: 50%"/> </td>
-    <td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/Chatbot/Chatbot_screen5.png" style="width: 50%; height: 50%"/> </td>
+   <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen1_avvio.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen2_01_Reconnisance.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen3_02_Resource.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen4_03_Initial_Access.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen5_04_PowerShell_script_exectuion.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen6_05_Persistence.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen7_06_Privilege_escalation.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen8_07_Defence_Evasion.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen9_08_Credential_Access.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen10_09_Discovery.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen11_10_Lateral_movement.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen12_11_Collection.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen13_12_Command_and_control.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen14_13_Exfiltration.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen15_14_Impact.png" style="width: 50%; height: 50%" /> </td>
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen16_riepilogo.png" style="width: 50%; height: 50%" /> </td>
    </tr>
    <tr>
-      <td colspan=5>[Video](https://youtu.be/PZYo-wV8GzY)</td> 
+      <td colspan=16>[Video](https://youtu.be/PZYo-wV8GzY)</td> 
    </tr> 
 </table>  
     
 ### SecurityMonster analisi binary ed eseguibili
 <table>
 <tr>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/absences_vocal_command/AssenzeDaComandoVocale_screen1.png" style="width: 50%; height: 50%"/> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/absences_vocal_command/AssenzeDaComandoVocale_screen2.png" style="width: 50%; height: 50%"/> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/absences_vocal_command/AssenzeDaComandoVocale_screen3.png" style="width: 50%; height: 50%"/> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/absences_vocal_command/AssenzeDaComandoVocale_screen4.png" style="width: 50%; height: 50%"/> </td>
-<td><img src="https://github.com/vamoruso/SecurityMonster/blob/main/screenshots/absences_vocal_command/AssenzeDaComandoVocale_screen5.png" style="width: 50%; height: 50%"/> </td>  
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/01_avvio_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/02_clamav_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/03_MalwareDectector_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/03_r2ai_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/03_yara_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/04_lief_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/05_lief_analsi_entropia_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/06b_radare_prompt_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/06_radare_analsi_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/07_radare2_malwarereport1_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/08_radare2_malware_indicators_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/09_radare2_suspicious_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/10_radare2_network_c2_api_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/11_radare2_obfuscation_ia_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_PackerLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_PackerMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_PackerR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/13_Packer_a.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionLief.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionLief_AI.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionLikeFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionMalwareDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_EvasionR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/14_Evasion_dll.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareLief.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareLief_AI.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_RansomewareR2ai.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/15_Ransomeware_so.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanDetector.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanFolder.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanLike_o.png" style="width: 50%; height: 50%"/> </td> 
+<td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/16_TrojanR2ai.png" style="width: 50%; height: 50%"/> </td> 
 </tr>  
      <tr>
-      <td colspan=5>[Video](https://youtu.be/XBB3AnkUHHY)</td> 
+      <td colspan=34>[Video](https://youtu.be/XBB3AnkUHHY)</td> 
    </tr> 
 </table>   
 
@@ -97,7 +137,7 @@
 
 ### Media
 
-• Tutti gli screenshot del codice utilizzato in questo README sono stati realizzati da me su dispostivo Windows 11
+• Tutti gli screenshot del codice utilizzato in questo README sono stati realizzati da me su dispostivo Windows 11 a 64bit 32GB RAM Processore	Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz, 2208 Mhz, 6 core, 12 processori logici
 
 ### Ringraziamenti
 
