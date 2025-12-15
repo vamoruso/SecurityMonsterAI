@@ -158,7 +158,7 @@
 <h2 align="left">Vincenzo Amoruso <cite>2025</cite></h2>
 
 
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat=markdown&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/vamoruso/SecurityMonster?style=flat) ![GitHub last commit](https://img.shields.io/github/last-commit/vamoruso/SecurityMonster?style=flat)  ![GitHub Repo stars](https://img.shields.io/github/stars/vamoruso/SecurityMonster?style=social)  
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat=markdown&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/vamoruso/SecurityMonsterAI?style=flat) ![GitHub last commit](https://img.shields.io/github/last-commit/vamoruso/SecurityMonsterAI?style=flat)  ![GitHub Repo stars](https://img.shields.io/github/stars/vamoruso/SecurityMonsterAI?style=social)  
 
 
 
