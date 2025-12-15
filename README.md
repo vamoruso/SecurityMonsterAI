@@ -1,5 +1,7 @@
 ## Security Monster AI
-
+<p align="center">
+  <img src="assets/banner.svg" alt="SecurityMonster ASCII Banner" width="800">
+</p>
 ###
 
 ### Questo repository è collegato al progetto software per la tesi di laurea magistrale di Vincenzo Amoruso dell'AA 2025/26 della **Universitas Mercatorum**
