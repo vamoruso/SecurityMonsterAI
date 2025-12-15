@@ -2,7 +2,6 @@
 <p align="center">
   <img src="assets/banner.svg" alt="SecurityMonster ASCII Banner" width="800">
 </p>
-###
 
 ### Questo repository è collegato al progetto software per la tesi di laurea magistrale di Vincenzo Amoruso dell'AA 2025/26 della **Universitas Mercatorum**
 ### Corso di laurea in : ***Cybersecurity LM-66***
@@ -21,8 +20,10 @@
     D:\Users\vincw\SecurityMonster\Scripts\activate 
 ### - Copiare tutti i files scaricati dal repository remoto GitHub nella cartella dell'ambiente virtuale locale.
 
-### - Nell'ambiente virtuale *(venv) D:\Users\vincw\SecurityMonster*  eseguire il comando per installare tutti i pacchetti necessari
+### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando per installare tutti i pacchetti necessari
     pip install requirements.txt 
+
+
 
 > [!NOTE]
 > Il server Ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
