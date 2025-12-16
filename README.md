@@ -28,15 +28,15 @@
 ### - Installare Python, scaricabile dal seguente link (Abbiamo selezionato la versione Windows a 64bit)
 [https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
 ### - Creare l'ambiente virtuale Python del server con il comando
-    python -m venv D:\Users\vincw\SecurityMonster
+    python -m venv D:\SecurityMonster
 ### - Attivare l'ambiente virtuale 
-    D:\Users\vincw\SecurityMonster\Scripts\activate 
+    D:\SecurityMonster\Scripts\activate 
 ### - Copiare tutti i files scaricati dal repository remoto GitHub nella cartella dell'ambiente virtuale locale.
 
 ### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando per installare tutti i pacchetti necessari
     pip install requirements.txt 
 
-### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando pyinstaller per creare il file SecurityMonster.exe nella cartella "dist"
+### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando pyinstaller per creare il file SecurityMonster.exe nella cartella *D:\SecurityMonster\dist*
     pyinstaller SecurityMonster.spec --clean 
 
 ---
@@ -72,6 +72,8 @@ Scarica e installa ClamAV per Windows 64 bit: https://www.clamav.net/downloads/p
 
 > [!NOTE]
 > ClamAV deve essere installato ed il server deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
+
+---
 
 ## 🔍 Installazione di Radare2 e r2ai
 
