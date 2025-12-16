@@ -10,6 +10,17 @@
 ### Titolo della tesi : ***Applicazione di Modelli Linguistici Locali nell’Analisi Predittiva delle Minacce Informatiche: Un Approccio basato sull’Intelligenza Artificiale***
 ### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecuiry alcune delle potenzialità della intelligenza artificiale.***
 
+## Schema progetto e tecnologie
+
+###
+
+![Schema](documentation/SchemaArchitteturaTesi.jpg)
+
+<div align="left">
+ <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+</div>
+
 ## Preparazione ambiente per build con Python  
 
 ### - Installare Python, scaricabile dal seguente link (Abbiamo selezionato la versione Windows a 64bit)
@@ -33,7 +44,7 @@ Scarica e installa Ollama per Windows 64 bit: https://ollama.com/download/Ollama
 
 ## ⚡ Uso di Ollama da CLI
 
-Dopo aver installato Ollama, puoi eseguire comandi direttamente da terminale (PowerShell o CMD).
+Dopo aver installato Ollama, eseguire comandi direttamente da terminale (PowerShell o CMD) per scaricare i modelli necessari al progetto.
 
 ### Avvio di un modello
 ```console
@@ -43,7 +54,7 @@ C:\>ollama pull qwen3-coder:30b
 C:\>ollama pull gemma3:12b
 C:\>ollama pull llama3:8b
 C:\>ollama pull mistral:latest
-
+```
 
 > [!NOTE]
 > Ollama deve essere installato ed il server deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
@@ -59,21 +70,33 @@ C:\>ollama pull mistral:latest
 | Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--output` → salva il risultato in file <br> `--no-banner` → nasconde banner iniziale |
 
 
+## 🚀 Integrazione di ClamAV
+
+### Installazione
+Scarica e installa ClamAV per Windows 64 bit: https://www.clamav.net/downloads/production/clamav-1.4.3.win.x64.msi
 
 > [!NOTE]
 > ClamAV deve essere installato ed il server deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
 
+## 🔍 Installazione di Radare2 e r2ai
 
-## Schema progetto e tecnologie
+### 1. Scaricare Radare2
+Scarica l’ultima versione stabile di Radare2 per Windows 64 bit: https://github.com/radareorg/radare2/releases/download/6.0.4/radare2-6.0.4-w64.zip
 
-###
 
-![Schema](documentation/SchemaArchitteturaTesi.jpg)
+Estrai lo zip e aggiungi la cartella `radare2` al tuo **PATH** di sistema per poter usare il comando `r2` da terminale.
 
-<div align="left">
- <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-</div>
+---
+
+### 2. Scaricare r2ai
+Scarica il plugin r2ai: https://github.com/radareorg/r2ai/releases/download/1.2.2/r2ai-1.2.2-windows-latest-meson.zip
+
+All’interno dello zip troverai i file:
+- `libr2ai.dll`
+- `decai.r2.js`
+
+Copiali nella directory dei plugin di Radare2:
+%USER_HOME%\.local\share\radare2\plugins
 
 
 ## Screenshots e video di test
