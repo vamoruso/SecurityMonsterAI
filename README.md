@@ -105,7 +105,7 @@ Copiali nella directory dei plugin di Radare2:
 | Executable   | Il file che avvia il programma     | `SecurityMonster.exe` <br> `SecurityMonster.py`                         |
 | Subcommand   | Azione da eseguire                 | `scan`, `help`                                                          |
 | Target       | Il file, directory o URL da analizzare | `C:\malware.exe` <br> `../samples` <br> `https://example.org`        |
-| Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--output` → salva il risultato in file <br> `--no-banner` → nasconde banner iniziale |
+| Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--no-banner` → nasconde banner iniziale |
 
 
 
