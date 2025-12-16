@@ -10,7 +10,7 @@
 ### Titolo della tesi : ***Applicazione di Modelli Linguistici Locali nell’Analisi Predittiva delle Minacce Informatiche: Un Approccio basato sull’Intelligenza Artificiale***
 ### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecuiry alcune delle potenzialità della intelligenza artificiale.***
 
-## Preparazione ambiente server Python
+## Preparazione ambiente per build con Python  
 
 ### - Installare Python, scaricabile dal seguente link (Abbiamo selezionato la versione Windows a 64bit)
 [https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
@@ -23,11 +23,45 @@
 ### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando per installare tutti i pacchetti necessari
     pip install requirements.txt 
 
+### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando pyinstaller per creare il file SecurityMonster.exe nella cartella "dist"
+    pyinstaller SecurityMonster.spec --clean 
+
+## 🚀 Integrazione di Ollama
+
+### Installazione
+Scarica e installa Ollama per Windows 64 bit: https://ollama.com/download/OllamaSetup.exe
+
+## ⚡ Uso di Ollama da CLI
+
+Dopo aver installato Ollama, puoi eseguire comandi direttamente da terminale (PowerShell o CMD).
+
+### Avvio di un modello
+```console
+C:\>ollama pull deepseek-coder:33b-instruct-q5_K_M
+C:\>ollama pull codellama:13b
+C:\>ollama pull qwen3-coder:30b
+C:\>ollama pull gemma3:12b
+C:\>ollama pull llama3:8b
+C:\>ollama pull mistral:latest
 
 
 > [!NOTE]
-> Il server Ollma deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
-> Il server ClamAV deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
+> Ollama deve essere installato ed il server deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
+
+
+## Guida d'uso per eseguibile SecurityMonster.exe.   
+
+| Componente   | Descrizione                        | Esempio                                                                 |
+|--------------|------------------------------------|-------------------------------------------------------------------------|
+| Executable   | Il file che avvia il programma     | `SecurityMonster.exe` <br> `SecurityMonster.py`                         |
+| Subcommand   | Azione da eseguire                 | `scan`, `help`                                                          |
+| Target       | Il file, directory o URL da analizzare | `C:\malware.exe` <br> `../samples` <br> `https://example.org`        |
+| Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--output` → salva il risultato in file <br> `--no-banner` → nasconde banner iniziale |
+
+
+
+> [!NOTE]
+> ClamAV deve essere installato ed il server deve essere in ascolto sulla porta 3310 all'indirizzo https://localhost:3310 
 
 
 ## Schema progetto e tecnologie
