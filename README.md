@@ -83,7 +83,6 @@ Scarica l’ultima versione stabile di Radare2 per Windows 64 bit: https://githu
 
 Estrai lo zip e aggiungi la cartella `radare2` al tuo **PATH** di sistema per poter usare il comando `r2` da terminale.
 
----
 
 ### 2. Scaricare r2ai
 Scarica il plugin r2ai: https://github.com/radareorg/r2ai/releases/download/1.2.2/r2ai-1.2.2-windows-latest-meson.zip
