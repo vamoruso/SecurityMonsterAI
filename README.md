@@ -32,11 +32,9 @@
 ### - Attivare l'ambiente virtuale 
     D:\SecurityMonster\Scripts\activate 
 ### - Copiare tutti i files scaricati dal repository remoto GitHub nella cartella dell'ambiente virtuale locale.
-    ```console
     cd D:\SecurityMonster
     git clone https://github.com/vamoruso/SecurityMonsterAI.git
-    '''
-
+    
 ### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando per installare tutti i pacchetti necessari
     pip install requirements.txt 
 
