@@ -21,6 +21,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
 </div>
 
+---
+
 ## Preparazione ambiente per build con Python  
 
 ### - Installare Python, scaricabile dal seguente link (Abbiamo selezionato la versione Windows a 64bit)
@@ -36,6 +38,8 @@
 
 ### - Nell'ambiente virtuale *(venv) D:\SecurityMonster*  eseguire il comando pyinstaller per creare il file SecurityMonster.exe nella cartella "dist"
     pyinstaller SecurityMonster.spec --clean 
+
+---
 
 ## 🚀 Integrazione di Ollama
 
@@ -59,16 +63,7 @@ C:\>ollama pull mistral:latest
 > [!NOTE]
 > Ollama deve essere installato ed il server deve essere in ascolto sulla porta 11434 all'indirizzo https://localhost:11434 <br/>
 
-
-## Guida d'uso per eseguibile SecurityMonster.exe.   
-
-| Componente   | Descrizione                        | Esempio                                                                 |
-|--------------|------------------------------------|-------------------------------------------------------------------------|
-| Executable   | Il file che avvia il programma     | `SecurityMonster.exe` <br> `SecurityMonster.py`                         |
-| Subcommand   | Azione da eseguire                 | `scan`, `help`                                                          |
-| Target       | Il file, directory o URL da analizzare | `C:\malware.exe` <br> `../samples` <br> `https://example.org`        |
-| Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--output` → salva il risultato in file <br> `--no-banner` → nasconde banner iniziale |
-
+---
 
 ## 🚀 Integrazione di ClamAV
 
@@ -97,6 +92,18 @@ All’interno dello zip troverai i file:
 
 Copiali nella directory dei plugin di Radare2:
 %USER_HOME%\.local\share\radare2\plugins
+
+---
+
+## Guida d'uso per eseguibile SecurityMonster.exe.   
+
+| Componente   | Descrizione                        | Esempio                                                                 |
+|--------------|------------------------------------|-------------------------------------------------------------------------|
+| Executable   | Il file che avvia il programma     | `SecurityMonster.exe` <br> `SecurityMonster.py`                         |
+| Subcommand   | Azione da eseguire                 | `scan`, `help`                                                          |
+| Target       | Il file, directory o URL da analizzare | `C:\malware.exe` <br> `../samples` <br> `https://example.org`        |
+| Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--output` → salva il risultato in file <br> `--no-banner` → nasconde banner iniziale |
+
 
 
 ## Screenshots e video di test
