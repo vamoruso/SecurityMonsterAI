@@ -111,9 +111,9 @@ Copiali nella directory dei plugin di Radare2:
 
 ## Tabelle e screenshots dei test effettuati
 
-### SecurityMonster analisi codice sorgente
+### 📄 SecurityMonster analisi codice sorgente
 
-### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file test.js)
+#### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file test.js)
 
 | Tipo                          | Descrizione                                                                                                              | Gravità |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------|
@@ -134,7 +134,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 ```    
 
 
-### Tabella 4.2: Risultati vulnerabilità rilevate nel file test.js dai modelli IA
+#### Tabella 4.2: Risultati vulnerabilità rilevate nel file test.js dai modelli IA
 
 | Tipo / Modello         | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |------------------------|:-----------:|:---------:|:--------------:|
@@ -155,7 +155,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 
 
 
-### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
+#### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
 
 | Nome File                  | Tipo di Problema                          | Gravità |
 |----------------------------|-------------------------------------------|---------|
@@ -175,7 +175,7 @@ Comando per scansione directory:
 D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 ```
 
-### Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
+#### Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
 
 | Nome File                  | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |----------------------------|:-----------:|:---------:|:--------------:|
@@ -200,7 +200,7 @@ Comando per scansione sito web  https://vamoruso.github.io/SecurityMonsterAI/:
 D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/SecurityMonsterAI/ --type src
 ```
 
-### Tabella 4.5: Riepilogo vulnerabilità sito web contenente file `vulnerable-utils.js`
+#### Tabella 4.5: Riepilogo vulnerabilità sito web contenente file `vulnerable-utils.js`
 
 | Vulnerabilità              | Descrizione                                                                                                                               | Gravità  |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -215,7 +215,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 | Local Storage con dati sensibili | Archiviazione di informazioni riservate nel `localStorage`, esposte a JavaScript.                                                | Alta     |
 | Eval con input utente (estremo) | Esecuzione dinamica di codice tramite `eval`, altamente pericolosa.                                                           | Critica  |
 
-### Tabella 4.6: Riepilogo vulnerabilità scansione `vulnerable-utils.js`
+#### Tabella 4.6: Riepilogo vulnerabilità scansione `vulnerable-utils.js`
 
 | Vulnerabilità                                      | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |----------------------------------------------------|:-----------:|:---------:|:--------------:|
@@ -234,7 +234,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 - **CodeLlama**: 1/10 → 10%  
 - **Deepseek-Coder**: 9/10 → 90%
 
-### Tabella 4.7: Riepilogo vulnerabilità innestatesito web contenente file `styles.css`
+#### Tabella 4.7: Riepilogo vulnerabilità innestatesito web contenente file `styles.css`
 
 | ID | Descrizione                                                                 |
 |----|-----------------------------------------------------------------------------|
@@ -266,7 +266,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 | 26 | Unicode tricks in content                                                   |
 | 27 | Z-index wars per clickjacking                                               |
 
-###  Categorizzazione delle 27 vulnerabilità del file styles.css
+####  Categorizzazione delle 27 vulnerabilità del file styles.css
 
 - **Injection (Code)**: 10 (37.0%)
 - **Information Leak**: 8 (29.6%)
@@ -297,14 +297,14 @@ Screenshots :
 
 ---
 
-### SecurityMonster analisi logs
+### 🧾 SecurityMonster analisi logs
 
 Comando per scansione file log didattici inseriti nella directory ../samples/log/mitre_list:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --type log
 ```
 
-### Tabella 5.1: Tattiche MITRE ATT&CK con esempi di file log simulati per analisi
+#### Tabella 5.1: Tattiche MITRE ATT&CK con esempi di file log simulati per analisi
 
 | Tattica MITRE ATT&CK       | Descrizione                                                                 | Gravità  | File simulato                             |
 |----------------------------|-----------------------------------------------------------------------------|----------|-------------------------------------------|
@@ -324,7 +324,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --ty
 | **Impact**                 | Manipolazione o distruzione di dati e sistemi.                             | Critica  | [`14_Impact.evtx`](samples/log/mitre_list/14_Impact.evtx)                          |
 
 Risultati scansione  file di log della cartella samples/log/mitre_list:
-### Tabella 5.2: Conteggio attacchi MITRE rilevati dai modelli
+#### Tabella 5.2: Conteggio attacchi MITRE rilevati dai modelli
 
 | Tipo Attacco              | Gemma3:12b | Llama3:8b | Mistral:latest |
 |---------------------------|:----------:|:---------:|:--------------:|
@@ -374,17 +374,17 @@ Screenshots :
 
 ---
     
-### SecurityMonster analisi binary ed eseguibili
+### 👾 SecurityMonster analisi binary ed eseguibili
 
 #### Tabella 6.1: Tattiche MITRE ATT&CK simulate in file didattici
 
 | Tattica MITRE         | Descrizione breve                                                                 | Gravità   | Nome file (estensioni)                     |
 |------------------------|-----------------------------------------------------------------------------------|-----------|--------------------------------------------|
 | Initial Access         | Test standard riconosciuto da tutti gli antivirus (es. EICAR)                     | Alta      | [`eicar.exe`](samples/binary/bin_source/eicar_pe.c)                                |
-| Defense Evasion        | Simulazione packer (UPX-like), offuscamento e sezione sospetta                   | Alta      | `PackerLike.*`](samples/binary/bin_source/PackerLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
-| Defense Evasion        | Simulazione tecniche di evasione (nomi sezioni sospetti, entropia alta)          | Critica   | `EvasionLike.*`](samples/binary/bin_source/EvasionLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
-| Impact                 | Simulazione ransomware (stringhe AES, crittografia, ransom note)                 | Critica   | `RansomwareLikeAES.*`](samples/binary/bin_source/RansomwareLikeAES.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
-| Persistence            | Comportamento tipico trojan (dropper, injection simulata)                        | Alta      | `TrojanLike.*`](samples/binary/bin_source/TrojanLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Defense Evasion        | Simulazione packer (UPX-like), offuscamento e sezione sospetta                   | Alta      | [`PackerLike.*`](samples/binary/bin_source/PackerLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Defense Evasion        | Simulazione tecniche di evasione (nomi sezioni sospetti, entropia alta)          | Critica   | [`EvasionLike.*`](samples/binary/bin_source/EvasionLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Impact                 | Simulazione ransomware (stringhe AES, crittografia, ransom note)                 | Critica   | [`RansomwareLikeAES.*`](samples/binary/bin_source/RansomwareLikeAES.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Persistence            | Comportamento tipico trojan (dropper, injection simulata)                        | Alta      | [`TrojanLike.*`](samples/binary/bin_source/TrojanLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
 
 #### Tabella 6.2: Riepilogo rilevazioni Packer della pipeline
 
