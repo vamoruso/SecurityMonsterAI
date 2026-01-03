@@ -307,7 +307,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --ty
 
 | Tattica MITRE ATT&CK       | Descrizione                                                                 | Gravità  | File simulato                             |
 |----------------------------|-----------------------------------------------------------------------------|----------|-------------------------------------------|
-| **Reconnaissance**         | Raccolta di informazioni sul target (domini, IP, servizi esposti).         | Media    | [`01_Reconnaissance.txt`]](./samples/log/mitre_list/01_Reconnaissance.txt)                   |
+| **Reconnaissance**         | Raccolta di informazioni sul target (domini, IP, servizi esposti).         | Media    | [`01_Reconnaissance.txt`](./samples/log/mitre_list/01_Reconnaissance.txt)                   |
 | **Resource Development**   | Preparazione di risorse per l’attacco (domini, malware, credenziali).      | Media    | `02 Resource Development.log`             |
 | **Initial Access**         | Primo ingresso nel sistema tramite phishing, exploit o credenziali rubate. | Alta     | `03 Initial Access.pcap`                  |
 | **Execution**              | Esecuzione di codice malevolo su sistema compromesso.                      | Alta     | `04 PowerShell script execution.evtx`     |
