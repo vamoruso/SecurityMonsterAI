@@ -107,9 +107,9 @@ Copiali nella directory dei plugin di Radare2:
 | Target       | Il file, directory o URL da analizzare | `C:\malware.exe` <br> `../samples` <br> `https://example.org`        |
 | Parameters   | Opzioni di elaborazione            | `--type src` → analisi file sorgenti <br> `--type bin` → analisi file eseguibili <br> `--type log` → analisi file log <br> `--version` → visualizza versione <br> `--no-banner` → nasconde banner iniziale |
 
+---
 
-
-## Screenshots e video di test
+## Tabelle e screenshots dei test effettuati
 
 ### SecurityMonster analisi codice sorgente
 
@@ -195,7 +195,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 - **Deepseek-Coder**: 10/10 → 100%
 
 
-Comando per scansione sito web:
+Comando per scansione sito web  https://vamoruso.github.io/SecurityMonsterAI/:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/SecurityMonsterAI/ --type src
 ```
@@ -275,6 +275,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 - **Clickjacking**: 2 (7.4%)
 - **Timing**: 1 (3.8%)
 
+Risultati scansione file style.css del sito  https://vamoruso.github.io/SecurityMonsterAI/:
 ![Risultati scansione](https://raw.githubusercontent.com/vamoruso/SecurityMonsterAI/main/assets/1767452572.png)
 
 
@@ -293,8 +294,33 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/source/screen12_source_analisi_sito.png" style="width: 50%; height: 50%" /> </td>
 </tr>  
 </table>
-    
+
+---
 ### SecurityMonster analisi logs
+
+Comando per scansione file log didattici inseriti nella directory ../samples/log/mitre_list:
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --type log
+```
+
+### Tabella 5.1: Tattiche MITRE ATT&CK con esempi di file log simulati per analisi
+
+| Tattica MITRE ATT&CK       | Descrizione                                                                 | Gravità  | File simulato                             |
+|----------------------------|-----------------------------------------------------------------------------|----------|-------------------------------------------|
+| **Reconnaissance**         | Raccolta di informazioni sul target (domini, IP, servizi esposti).         | Media    | `01 Reconnaissance.txt`                   |
+| **Resource Development**   | Preparazione di risorse per l’attacco (domini, malware, credenziali).      | Media    | `02 Resource Development.log`             |
+| **Initial Access**         | Primo ingresso nel sistema tramite phishing, exploit o credenziali rubate. | Alta     | `03 Initial Access.pcap`                  |
+| **Execution**              | Esecuzione di codice malevolo su sistema compromesso.                      | Alta     | `04 PowerShell script execution.evtx`     |
+| **Persistence**            | Mantenimento dell’accesso dopo reboot o cambio credenziali.                | Alta     | `05 Persistence.evtx`                     |
+| **Privilege Escalation**   | Acquisizione di permessi elevati (admin/root).                             | Alta     | `06 Privilege Escalation.evtx`            |
+| **Defense Evasion**        | Tecniche per evitare rilevamento (offuscamento, disattivazione antivirus). | Alta     | `07 Defense Evasion.evtx`                 |
+| **Credential Access**      | Furto di credenziali (dump, keylogging, brute force).                      | Alta     | `08 Credential Access.evtx`               |
+| **Discovery**              | Mappatura dell’ambiente compromesso (host, utenti, servizi).               | Media    | `09 Discovery.log`                        |
+| **Lateral Movement**       | Spostamento tra sistemi nella rete per espandere il controllo.             | Alta     | `10 Lateral movement.log`                 |
+| **Collection**             | Raccolta di dati sensibili (documenti, credenziali, audio).                | Alta     | `11 Collection.log`                       |
+| **Command and Control**    | Comunicazione con sistemi compromessi per impartire comandi.               | Alta     | `12 Command and Control.pcap`             |
+| **Exfiltration**           | Estrazione di dati verso l’esterno (FTP, HTTP, DNS).                       | Critica  | `13 Exfiltration.pcap`                    |
+| **Impact**                 | Manipolazione o distruzione di dati e sistemi.                             | Critica  | `14 Impact.evtx`                          |
 
 <table>
    <tr>
