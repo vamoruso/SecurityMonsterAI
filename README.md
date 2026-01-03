@@ -307,20 +307,20 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --ty
 
 | Tattica MITRE ATT&CK       | Descrizione                                                                 | Gravità  | File simulato                             |
 |----------------------------|-----------------------------------------------------------------------------|----------|-------------------------------------------|
-| **Reconnaissance**         | Raccolta di informazioni sul target (domini, IP, servizi esposti).         | Media    | [`01_Reconnaissance.txt`](./samples/log/mitre_list/01_Reconnaissance.txt)                   |
-| **Resource Development**   | Preparazione di risorse per l’attacco (domini, malware, credenziali).      | Media    | `02 Resource Development.log`             |
-| **Initial Access**         | Primo ingresso nel sistema tramite phishing, exploit o credenziali rubate. | Alta     | `03 Initial Access.pcap`                  |
-| **Execution**              | Esecuzione di codice malevolo su sistema compromesso.                      | Alta     | `04 PowerShell script execution.evtx`     |
-| **Persistence**            | Mantenimento dell’accesso dopo reboot o cambio credenziali.                | Alta     | `05 Persistence.evtx`                     |
-| **Privilege Escalation**   | Acquisizione di permessi elevati (admin/root).                             | Alta     | `06 Privilege Escalation.evtx`            |
-| **Defense Evasion**        | Tecniche per evitare rilevamento (offuscamento, disattivazione antivirus). | Alta     | `07 Defense Evasion.evtx`                 |
-| **Credential Access**      | Furto di credenziali (dump, keylogging, brute force).                      | Alta     | `08 Credential Access.evtx`               |
-| **Discovery**              | Mappatura dell’ambiente compromesso (host, utenti, servizi).               | Media    | `09 Discovery.log`                        |
-| **Lateral Movement**       | Spostamento tra sistemi nella rete per espandere il controllo.             | Alta     | `10 Lateral movement.log`                 |
-| **Collection**             | Raccolta di dati sensibili (documenti, credenziali, audio).                | Alta     | `11 Collection.log`                       |
-| **Command and Control**    | Comunicazione con sistemi compromessi per impartire comandi.               | Alta     | `12 Command and Control.pcap`             |
-| **Exfiltration**           | Estrazione di dati verso l’esterno (FTP, HTTP, DNS).                       | Critica  | `13 Exfiltration.pcap`                    |
-| **Impact**                 | Manipolazione o distruzione di dati e sistemi.                             | Critica  | `14 Impact.evtx`                          |
+| **Reconnaissance**         | Raccolta di informazioni sul target (domini, IP, servizi esposti).         | Media    | [`01_Reconnaissance.txt`](samples/log/mitre_list/01_Reconnaissance.log)                   |
+| **Resource Development**   | Preparazione di risorse per l’attacco (domini, malware, credenziali).      | Media    | [`02_Resource Development.log`(samples/log/mitre_list/02_Resource Development.log)             |
+| **Initial Access**         | Primo ingresso nel sistema tramite phishing, exploit o credenziali rubate. | Alta     | [`03_Initial Access.pcap`(samples/log/mitre_list/03_Initial Access.pcap)                  |
+| **Execution**              | Esecuzione di codice malevolo su sistema compromesso.                      | Alta     | [`04_PowerShell script execution.evtx`](samples/log/mitre_list/04_PowerShell script execution.evtx)     |
+| **Persistence**            | Mantenimento dell’accesso dopo reboot o cambio credenziali.                | Alta     | [`05_Persistence.evtx`](samples/log/mitre_list/05_Persistence.evtx)                     |
+| **Privilege Escalation**   | Acquisizione di permessi elevati (admin/root).                             | Alta     | [`06_Privilege Escalation.evtx`](samples/log/mitre_list/06_Privilege Escalation.evtx)            |
+| **Defense Evasion**        | Tecniche per evitare rilevamento (offuscamento, disattivazione antivirus). | Alta     | [`07_Defense Evasion.evtx`](samples/log/mitre_list/07_Defense Evasion.evtx)                 |
+| **Credential Access**      | Furto di credenziali (dump, keylogging, brute force).                      | Alta     | [`08_Credential Access.evtx`](samples/log/mitre_list/08_Credential Access.evtx)               |
+| **Discovery**              | Mappatura dell’ambiente compromesso (host, utenti, servizi).               | Media    | [`09_Discovery.log`](samples/log/mitre_list/09_Discovery.log)                        |
+| **Lateral Movement**       | Spostamento tra sistemi nella rete per espandere il controllo.             | Alta     | [`10_Lateral movement.log`](samples/log/mitre_list/10_Lateral movement.log)                 |
+| **Collection**             | Raccolta di dati sensibili (documenti, credenziali, audio).                | Alta     | [`11_Collection.log`](samples/log/mitre_list/11_Collection.log)                       |
+| **Command and Control**    | Comunicazione con sistemi compromessi per impartire comandi.               | Alta     | [`12_Command and Control.pcap`](samples/log/mitre_list/12_Command and Control.pcap)             |
+| **Exfiltration**           | Estrazione di dati verso l’esterno (FTP, HTTP, DNS).                       | Critica  | [`13_Exfiltration.pcap`](samples/log/mitre_list/13_Exfiltration.pcap)                    |
+| **Impact**                 | Manipolazione o distruzione di dati e sistemi.                             | Critica  | [`14_Impact.evtx`](samples/log/mitre_list/14_Impact.evtx)                          |
 
 <table>
    <tr>
