@@ -148,12 +148,11 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 | Loop infinito          |      ✔      |     ✔     |        ✗       |
 | Keylogger              |      ✔      |     ✔     |        ✔       |
 | Esfiltrazione          |      ✔      |     ✗     |        ✔       |
-
-- **Qwen3-Coder**: 9/10 → 90%  
-- **CodeLlama**: 8/10 → 80%  
-- **Deepseek-Coder**: 7/10 → 70%
+| **Attacchi rilevati**     | **9/10 → 90%** | **8/10 → 80%** | **7/10 → 70%** |
 
 
+> **Legenda**:  
+> ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
 #### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
 
@@ -189,11 +188,10 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 | UnsafeInput.c              |      ✔      |     ✔     |        ✔       |
 | UnsafeSerialization.java   |      ✔      |     ✔     |        ✔       |
 | UnsafeShell.py             |      ✔      |     ✔     |        ✔       |
+| **Attacchi rilevati**     | **10/10 → 100%** | **9/10 → 90%** | **10/10 → 100%** |
 
-- **Qwen3-Coder**: 10/10 → 100%  
-- **CodeLlama**: 9/10 → 90%  
-- **Deepseek-Coder**: 10/10 → 100%
-
+> **Legenda**:  
+> ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
 Comando per scansione sito web  https://vamoruso.github.io/SecurityMonsterAI/:
 ```console
@@ -229,10 +227,9 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 | Insecure Random                                    |      ✔      |     ✗     |        ✔       |
 | Local Storage con dati sensibili                   |      ✔      |     ✗     |        ✔       |
 | Eval con input utente (estremo)                    |      ✔      |     ✗     |        ✗       |
-
-- **Qwen3-Coder**: 10/10 → 100%  
-- **CodeLlama**: 1/10 → 10%  
-- **Deepseek-Coder**: 9/10 → 90%
+| **Attacchi rilevati**     | **10/10 → 100%** | **1/10 → 10%** | **9/10 → 90%** |
+> **Legenda**:  
+> ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
 #### Tabella 4.7: Riepilogo vulnerabilità innestatesito web contenente file `styles.css`
 
@@ -343,7 +340,8 @@ Risultati scansione  file di log della cartella samples/log/mitre_list:
 | Exfiltration              | ✔          | ✔         | ✔              |
 | Impact                    | ✔          | ✔         | ✔              |
 | **Attacchi rilevati**     | **13/14 → 93%** | **13/14 → 93%** | **10/14 → 72%** |
-
+> **Legenda**:  
+> ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
 Screenshots :
 <table>
@@ -434,6 +432,8 @@ Screenshots :
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✗     |
 | **R2 e r2ai**               | ✗    | ✗      | ✔      | ✔    | ✗     |
 
+> **Legenda**:  
+> ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
 Screenshots :
 <table>
