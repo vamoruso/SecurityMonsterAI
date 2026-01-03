@@ -3,6 +3,13 @@
   <img src="assets/banner.svg" alt="SecurityMonster ASCII Banner" width="800">
 </p>
 
+### Questo repository è collegato al progetto software per la tesi di laurea magistrale di Vincenzo Amoruso dell'AA 2025/26 della **Universitas Mercatorum**
+### Corso di laurea in : ***Cybersecurity LM-66***
+### Relatore : ***Prof. Davide Berardi***
+### Insegnamento di : ***Cybersecuirty***
+### Titolo della tesi : ***Applicazione di Modelli Linguistici Locali nell’Analisi Predittiva delle Minacce Informatiche: Un Approccio basato sull’Intelligenza Artificiale***
+### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecuiry alcune delle potenzialità della intelligenza artificiale.***
+
 ## Indice
 - [Security Monster AI](#security-monster-ai)
 - [Schema progetto e tecnologie](#schema-progetto-e-tecnologie)
@@ -16,13 +23,6 @@
   - [Analisi logs](#-securitymonster-analisi-logs)
   - [Analisi binary](#-securitymonster-analisi-binary-ed-eseguibili)
 - [Credits](#credits)
-
-### Questo repository è collegato al progetto software per la tesi di laurea magistrale di Vincenzo Amoruso dell'AA 2025/26 della **Universitas Mercatorum**
-### Corso di laurea in : ***Cybersecurity LM-66***
-### Relatore : ***Prof. Davide Berardi***
-### Insegnamento di : ***Cybersecuirty***
-### Titolo della tesi : ***Applicazione di Modelli Linguistici Locali nell’Analisi Predittiva delle Minacce Informatiche: Un Approccio basato sull’Intelligenza Artificiale***
-### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecuiry alcune delle potenzialità della intelligenza artificiale.***
 
 
 ## Schema progetto e tecnologie
