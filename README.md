@@ -168,8 +168,6 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 > **Legenda**:  
 > ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 ---
-
----
 #### Caso 2️⃣
 
 #### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory `./samples/source`)
