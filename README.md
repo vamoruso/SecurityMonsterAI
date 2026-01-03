@@ -128,7 +128,7 @@ Copiali nella directory dei plugin di Radare2:
 
 ### 📄 SecurityMonster analisi codice sorgente
 
-#### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file test.js)
+#### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file `test.js`)
 
 | Tipo                          | Descrizione                                                                                                              | Gravità |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------|
@@ -143,13 +143,11 @@ Copiali nella directory dei plugin di Radare2:
 | Keylogger                     | Intercetta ogni pressione di tasto e invia i dati a un server remoto. È un esempio classico di violazione della privacy.  | Alta    |
 | Esfiltrazione                 | Sfrutta un’immagine invisibile per inviare i cookie dell’utente a un dominio esterno, bypassando restrizioni CORS.       | Alta    |
 
-Comando per scansione file test.js:
+#### Comando per scansione file `test.js`:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 ```    
-
-
-#### Tabella 4.2: Risultati vulnerabilità rilevate nel file test.js dai modelli IA
+#### Tabella 4.2: Risultati vulnerabilità rilevate nel file `test.js` dai modelli IA
 
 | Tipo / Modello         | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |------------------------|:-----------:|:---------:|:--------------:|
@@ -169,7 +167,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 > **Legenda**:  
 > ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
-#### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
+#### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory `./samples/source`)
 
 | Nome File                  | Tipo di Problema                          | Gravità |
 |----------------------------|-------------------------------------------|---------|
@@ -184,11 +182,10 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 | [UnsafeSerialization.java](samples/source/UnsafeSerialization.java)   | Insecure Deserialization                  | Alta    |
 | [UnsafeShell.py](samples/source/UnsafeShell.py)             | Command Injection                         | Alta    |
 
-Comando per scansione directory:
+#### Comando per scansione directory `../samples/source`:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 ```
-
 #### Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
 
 | Nome File                  | Qwen3-Coder | CodeLlama | Deepseek-Coder |
@@ -208,7 +205,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 > **Legenda**:  
 > ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
-Comando per scansione sito web  https://vamoruso.github.io/SecurityMonsterAI/:
+#### Comando per scansione sito web  `https://vamoruso.github.io/SecurityMonsterAI/`:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/SecurityMonsterAI/ --type src
 ```
@@ -287,7 +284,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 - **Clickjacking**: 2 (7.4%)
 - **Timing**: 1 (3.8%)
 
-Risultati scansione file style.css del sito  https://vamoruso.github.io/SecurityMonsterAI/:
+#### Risultati scansione file style.css del sito  https://vamoruso.github.io/SecurityMonsterAI/:
 ![Risultati scansione](https://raw.githubusercontent.com/vamoruso/SecurityMonsterAI/main/assets/1767452572.png)
 
 Screenshots :
@@ -311,7 +308,7 @@ Screenshots :
 
 ### 🧾 SecurityMonster analisi logs
 
-Comando per scansione file log didattici inseriti nella directory ../samples/log/mitre_list:
+#### Comando per scansione file log didattici inseriti nella directory `../samples/log/mitre_list`:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --type log
 ```
@@ -335,7 +332,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --ty
 | **Exfiltration**           | Estrazione di dati verso l’esterno (FTP, HTTP, DNS).                       | Critica  | [`13_Exfiltration.pcap`](samples/log/mitre_list/13_Exfiltration.pcap)                    |
 | **Impact**                 | Manipolazione o distruzione di dati e sistemi.                             | Critica  | [`14_Impact.evtx`](samples/log/mitre_list/14_Impact.evtx)                          |
 
-Risultati scansione  file di log della cartella samples/log/mitre_list:
+#### Risultati scansione  file di log della cartella samples/log/mitre_list:
 #### Tabella 5.2: Conteggio attacchi MITRE rilevati dai modelli
 
 | Tipo Attacco              | Gemma3:12b | Llama3:8b | Mistral:latest |
@@ -399,6 +396,11 @@ Screenshots :
 | Impact                 | Simulazione ransomware (stringhe AES, crittografia, ransom note)                 | Critica   | [`RansomwareLikeAES.*`](samples/binary/bin_source/RansomwareLikeAES.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
 | Persistence            | Comportamento tipico trojan (dropper, injection simulata)                        | Alta      | [`TrojanLike.*`](samples/binary/bin_source/TrojanLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
 
+
+#### Comando per scansione cartella `../samples/binary/PackerLike` :
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/PackerLike --type bin
+```
 #### Tabella 6.2: Riepilogo rilevazioni Packer della pipeline
 
 | Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
@@ -411,6 +413,10 @@ Screenshots :
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✔     |
 | **R2 e r2ai**               | ✗    | ✔      | ✔      | ✗    | ✔     |
 
+#### Comando per scansione cartella `../samples/binary/EvasionLike` :
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/EvasionLike --type bin
+```
 #### Tabella 6.3: Riepilogo rilevazioni Evasion della pipeline
 
 | Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
@@ -423,6 +429,10 @@ Screenshots :
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✔     |
 | **R2 e r2ai**               | ✗    | ✔      | ✔      | ✗    | ✔     |
 
+#### Comando per scansione cartella `../samples/binary/RansomwareLikeAES` :
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/RansomwareLikeAES --type bin
+```
 #### Tabella 6.4: Riepilogo rilevazioni Impact/Ransomware della pipeline
 
 | Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
@@ -435,6 +445,10 @@ Screenshots :
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✗    | ✔     |
 | **R2 e r2ai**               | ✗    | ✗      | ✔      | ✗    | ✔     |
 
+#### Comando per scansione cartella `../samples/binary/TrojanLike` :
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/TrojanLike --type bin
+```
 #### Tabella 6.5: Riepilogo rilevazioni Persistence/Trojan della pipeline
 
 | Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
