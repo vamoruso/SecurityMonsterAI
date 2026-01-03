@@ -52,7 +52,7 @@ Scarica e installa Ollama per Windows 64 bit: https://ollama.com/download/Ollama
 
 Dopo aver installato Ollama, eseguire comandi direttamente da terminale (PowerShell o CMD) per scaricare i modelli necessari al progetto.
 
-### Avvio di un modello
+### Scarico modelli utilizzati per il framework
 ```console
 C:\>ollama pull deepseek-coder:33b-instruct-q5_K_M
 C:\>ollama pull codellama:13b
@@ -112,7 +112,85 @@ Copiali nella directory dei plugin di Radare2:
 ## Screenshots e video di test
 
 ### SecurityMonster analisi codice sorgente
-    
+
+## Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file test.js)
+
+| Tipo                          | Descrizione                                                                                                              | Gravità |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------|
+| XSS                           | DOM-based XSS tramite inserimento diretto nel DOM senza sanitizzazione.                                                  | Alta    |
+| CSRF                          | Richiesta automatica verso endpoint critico senza token CSRF.                                                            | Media   |
+| Eval injection                | Esecuzione dinamica di codice utente tramite `eval()`.                                                                   | Alta    |
+| Prototype Pollution           | Manipolazione dell’oggetto `proto` tramite JSON non sicuro.                                                              | Alta    |
+| Insecure Access               | Manipolazione diretta del DOM con ID controllato da input utente.                                                        | Media   |
+| Hardcoded Secrets             | Presenza di chiavi API hardcoded nel codice sorgente.                                                                    | Alta    |
+| Errore assegnazione           | Errore logico: assegnazione anziché test.                                                                                | Alta    |
+| Loop infinito                 | Errore logico: loop infinito per incremento errato.                                                                      | Alta    |
+| Keylogger                     | Intercetta ogni pressione di tasto e invia i dati a un server remoto. È un esempio classico di violazione della privacy.  | Alta    |
+| Esfiltrazione                 | Sfrutta un’immagine invisibile per inviare i cookie dell’utente a un dominio esterno, bypassando restrizioni CORS.       | Alta    |
+
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
+```    
+
+
+## Tabella 4.2: Risultati vulnerabilità rilevate nel file test.js dai modelli IA
+
+| Tipo / Modello         | Qwen3-Coder | CodeLlama | Deepseek-Coder |
+|------------------------|:-----------:|:---------:|:--------------:|
+| XSS                    |      ✔      |     ✔     |        ✗       |
+| CSRF                   |      ✔      |     ✔     |        ✔       |
+| Eval injection         |      ✔      |     ✗     |        ✗       |
+| Prototype Pollution    |      ✔      |     ✔     |        ✔       |
+| Insecure DOM Access    |      ✔      |     ✔     |        ✔       |
+| Hardcoded Secrets      |      ✔      |     ✔     |        ✔       |
+| Errore assegnazione    |      ✔      |     ✔     |        ✔       |
+| Loop infinito          |      ✔      |     ✔     |        ✗       |
+| Keylogger              |      ✔      |     ✔     |        ✔       |
+| Esfiltrazione          |      ✔      |     ✗     |        ✔       |
+
+- **Qwen3-Coder**: 9/10 → 90%  
+- **CodeLlama**: 8/10 → 80%  
+- **Deepseek-Coder**: 7/10 → 70%
+
+
+
+## Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
+
+| Nome File                  | Tipo di Problema                          | Gravità |
+|----------------------------|-------------------------------------------|---------|
+| BrokenAuth.java            | Broken Authentication                     | Alta    |
+| InsecureCSRFHandler.cs     | Cross-Site Request Forgery (CSRF)         | Alta    |
+| InsecureDeserialization.py | Insecure Deserialization                  | Alta    |
+| SensitiveDataExposure.c    | Cryptographic Failures                    | Media   |
+| SqlInjection.java          | Injection (SQLi)                          | Alta    |
+| UnvalidatedRedirect.java   | Unvalidated Redirects                     | Media   |
+| UnsafeArray.c              | Buffer Overflow / Memory Corruption       | Alta    |
+| UnsafeInput.c              | Improper Input\Validation                 | Media   |
+| UnsafeSerialization.java   | Insecure Deserialization                  | Alta    |
+| UnsafeShell.py             | Command Injection                         | Alta    |
+
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
+```    
+## Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
+
+| Nome File                  | Qwen3-Coder | CodeLlama | Deepseek-Coder |
+|----------------------------|:-----------:|:---------:|:--------------:|
+| BrokenAuth.java            |      ✔      |     ✗     |        ✔       |
+| InsecureCSRFHandler.cs     |      ✔      |     ✔     |        ✔       |
+| InsecureDeserialization.py |      ✔      |     ✔     |        ✔       |
+| SensitiveDataExposure.c    |      ✔      |     ✔     |        ✔       |
+| SqlInjection.java          |      ✔      |     ✔     |        ✔       |
+| UnvalidatedRedirect.java   |      ✔      |     ✔     |        ✔       |
+| UnsafeArray.c              |      ✔      |     ✔     |        ✔       |
+| UnsafeInput.c              |      ✔      |     ✔     |        ✔       |
+| UnsafeSerialization.java   |      ✔      |     ✔     |        ✔       |
+| UnsafeShell.py             |      ✔      |     ✔     |        ✔       |
+
+- **Qwen3-Coder**: 10/10 → 100%  
+- **CodeLlama**: 9/10 → 90%  
+- **Deepseek-Coder**: 10/10 → 100%
+
 <table>
 <tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/source/screen1_source_analisi.png" style="width: 50%; height: 50%" /> </td>
