@@ -127,7 +127,8 @@ Copiali nella directory dei plugin di Radare2:
 ## Tabelle e screenshots dei test effettuati
 
 ### 📄 SecurityMonster analisi codice sorgente
-
+---
+#### Caso 1️⃣
 #### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file `test.js`)
 
 | Tipo                          | Descrizione                                                                                                              | Gravità |
@@ -166,6 +167,10 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 
 > **Legenda**:  
 > ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
+---
+
+---
+#### Caso 2️⃣
 
 #### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory `./samples/source`)
 
@@ -204,6 +209,9 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 
 > **Legenda**:  
 > ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
+
+---
+#### Caso 3️⃣
 
 #### Comando per scansione sito web  `https://vamoruso.github.io/SecurityMonsterAI/`:
 ```console
@@ -397,6 +405,7 @@ Screenshots :
 | Persistence            | Comportamento tipico trojan (dropper, injection simulata)                        | Alta      | [`TrojanLike.*`](samples/binary/bin_source/TrojanLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
 
 
+---
 #### Comando per scansione cartella `../samples/binary/PackerLike` :
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/PackerLike --type bin
@@ -413,6 +422,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/PackerLike -
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✔     |
 | **R2 e r2ai**               | ✗    | ✔      | ✔      | ✗    | ✔     |
 
+---
 #### Comando per scansione cartella `../samples/binary/EvasionLike` :
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/EvasionLike --type bin
@@ -429,6 +439,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/EvasionLike 
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✔     |
 | **R2 e r2ai**               | ✗    | ✔      | ✔      | ✗    | ✔     |
 
+---
 #### Comando per scansione cartella `../samples/binary/RansomwareLikeAES` :
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/RansomwareLikeAES --type bin
@@ -445,6 +456,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/RansomwareLi
 | **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✗    | ✔     |
 | **R2 e r2ai**               | ✗    | ✗      | ✔      | ✗    | ✔     |
 
+---
 #### Comando per scansione cartella `../samples/binary/TrojanLike` :
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/binary/TrojanLike --type bin
