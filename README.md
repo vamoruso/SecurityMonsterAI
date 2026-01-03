@@ -113,7 +113,7 @@ Copiali nella directory dei plugin di Radare2:
 
 ### SecurityMonster analisi codice sorgente
 
-## Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file test.js)
+### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file test.js)
 
 | Tipo                          | Descrizione                                                                                                              | Gravità |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------|
@@ -128,12 +128,13 @@ Copiali nella directory dei plugin di Radare2:
 | Keylogger                     | Intercetta ogni pressione di tasto e invia i dati a un server remoto. È un esempio classico di violazione della privacy.  | Alta    |
 | Esfiltrazione                 | Sfrutta un’immagine invisibile per inviare i cookie dell’utente a un dominio esterno, bypassando restrizioni CORS.       | Alta    |
 
+Comando per scansione file test.js:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 ```    
 
 
-## Tabella 4.2: Risultati vulnerabilità rilevate nel file test.js dai modelli IA
+### Tabella 4.2: Risultati vulnerabilità rilevate nel file test.js dai modelli IA
 
 | Tipo / Modello         | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |------------------------|:-----------:|:---------:|:--------------:|
@@ -154,7 +155,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 
 
 
-## Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
+### Tabella 4.3: Elenco vulnerabilità secondo caso d’uso (directory ./samples/source)
 
 | Nome File                  | Tipo di Problema                          | Gravità |
 |----------------------------|-------------------------------------------|---------|
@@ -169,10 +170,12 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 | UnsafeSerialization.java   | Insecure Deserialization                  | Alta    |
 | UnsafeShell.py             | Command Injection                         | Alta    |
 
+Comando per scansione directory:
 ```console
 D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
-```    
-## Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
+```
+
+### Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
 
 | Nome File                  | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |----------------------------|:-----------:|:---------:|:--------------:|
@@ -190,6 +193,90 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 - **Qwen3-Coder**: 10/10 → 100%  
 - **CodeLlama**: 9/10 → 90%  
 - **Deepseek-Coder**: 10/10 → 100%
+
+
+Comando per scansione sito web:
+```console
+D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/SecurityMonsterAI/ --type src
+```
+
+### Tabella 4.5: Riepilogo vulnerabilità sito web contenente file `vulnerable-utils.js`
+
+| Vulnerabilità              | Descrizione                                                                                                                               | Gravità  |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| Reflected XSS              | Iniezione di script riflesso tramite parametri URL non sanitizzati.                                                                       | Critica  |
+| DOM-Based XSS              | Manipolazione del DOM lato client che consente l’esecuzione di codice malevolo.                                                          | Critica  |
+| innerHTML con input utente | Uso diretto di `innerHTML` con dati non validati, causa XSS.                                                                              | Alta     |
+| SQL Injection (simulato client-side) | Simulazione di query SQL vulnerabili lato client, utile per test didattici.                                                  | Media    |
+| Hardcoded Credentials      | Credenziali statiche nel codice sorgente, facilmente estraibili.                                                                          | Alta     |
+| Sensitive Data Exposure    | Dati sensibili esposti in chiaro, accessibili da terzi.                                                                                  | Alta     |
+| IDOR                       | Accesso non autorizzato a risorse tramite ID manipolabili.                                                                               | Critica  |
+| Insecure Random            | Uso di generatori di numeri casuali non crittograficamente sicuri.                                                                       | Media    |
+| Local Storage con dati sensibili | Archiviazione di informazioni riservate nel `localStorage`, esposte a JavaScript.                                                | Alta     |
+| Eval con input utente (estremo) | Esecuzione dinamica di codice tramite `eval`, altamente pericolosa.                                                           | Critica  |
+
+### Tabella 4.6: Riepilogo vulnerabilità scansione `vulnerable-utils.js`
+
+| Vulnerabilità                                      | Qwen3-Coder | CodeLlama | Deepseek-Coder |
+|----------------------------------------------------|:-----------:|:---------:|:--------------:|
+| Reflected XSS                                      |      ✔      |     ✗     |        ✔       |
+| DOM-Based XSS                                      |      ✔      |     ✗     |        ✔       |
+| innerHTML con input utente                         |      ✔      |     ✗     |        ✔       |
+| SQL Injection (simulato client-side)               |      ✔      |     ✔     |        ✔       |
+| Hardcoded Credentials                              |      ✔      |     ✗     |        ✔       |
+| Sensitive Data Exposure                            |      ✔      |     ✗     |        ✔       |
+| Insecure Direct Object Reference (IDOR)            |      ✔      |     ✗     |        ✔       |
+| Insecure Random                                    |      ✔      |     ✗     |        ✔       |
+| Local Storage con dati sensibili                   |      ✔      |     ✗     |        ✔       |
+| Eval con input utente (estremo)                    |      ✔      |     ✗     |        ✗       |
+
+- **Qwen3-Coder**: 10/10 → 100%  
+- **CodeLlama**: 1/10 → 10%  
+- **Deepseek-Coder**: 9/10 → 90%
+
+### Tabella 4.7: Riepilogo vulnerabilità innestatesito web contenente file `styles.css`
+
+| ID | Descrizione                                                                 |
+|----|-----------------------------------------------------------------------------|
+| 1  | Commenti con informazioni sensibili                                         |
+| 2  | Internal paths disclosure                                                   |
+| 3  | CSS Injection vulnerability                                                 |
+| 4  | Keylogger via CSS (attribute selector attack)                               |
+| 5  | Data exfiltration via CSS                                                   |
+| 6  | CSS-based timing attack                                                     |
+| 7  | Clickjacking helper styles                                                  |
+| 8  | Mixed content – HTTP resources                                              |
+| 9  | CSS Injection point per Unicode tricks                                      |
+| 10 | Sensitive class names che rivelano logica business                          |
+| 11 | Debug styles lasciati in produzione                                         |
+| 12 | CSS che espone internal structure                                           |
+| 13 | Sourcemap disclosure                                                        |
+| 14 | `@import` da fonte non verificata                                           |
+| 15 | CSS variables con valori sensibili                                          |
+| 16 | `Expression()` for IE (code execution in old IE)                            |
+| 17 | Behavior binding (IE specific)                                              |
+| 18 | CSS filters che possono essere abusati                                      |
+| 19 | User tracking via background image                                          |
+| 20 | CSS timing attacks                                                          |
+| 21 | Malicious `@font-face`                                                      |
+| 22 | Viewport-based information disclosure                                       |
+| 23 | CSS con backdoor per phishing                                               |
+| 24 | Malicious CSS counters                                                      |
+| 25 | CSS-based CAPTCHA bypass hints                                               |
+| 26 | Unicode tricks in content                                                   |
+| 27 | Z-index wars per clickjacking                                               |
+
+###  Categorizzazione delle 27 vulnerabilità del file styles.css
+
+- **Injection (Code)**: 10 (37.0%)
+- **Information Leak**: 8 (29.6%)
+- **IE-specific Exploits**: 4 (14.8%)
+- **Tracking & Privacy**: 2 (7.4%)
+- **Clickjacking**: 2 (7.4%)
+- **Timing**: 1 (3.8%)
+
+![Risultati scansione](https://raw.githubusercontent.com/vamoruso/SecurityMonsterAI/main/assets/1767452572.png)
+
 
 <table>
 <tr>
