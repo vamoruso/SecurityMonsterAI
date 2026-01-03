@@ -159,16 +159,16 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/test.js --type src
 
 | Nome File                  | Tipo di Problema                          | Gravità |
 |----------------------------|-------------------------------------------|---------|
-| BrokenAuth.java            | Broken Authentication                     | Alta    |
-| InsecureCSRFHandler.cs     | Cross-Site Request Forgery (CSRF)         | Alta    |
-| InsecureDeserialization.py | Insecure Deserialization                  | Alta    |
-| SensitiveDataExposure.c    | Cryptographic Failures                    | Media   |
-| SqlInjection.java          | Injection (SQLi)                          | Alta    |
-| UnvalidatedRedirect.java   | Unvalidated Redirects                     | Media   |
-| UnsafeArray.c              | Buffer Overflow / Memory Corruption       | Alta    |
-| UnsafeInput.c              | Improper Input\Validation                 | Media   |
-| UnsafeSerialization.java   | Insecure Deserialization                  | Alta    |
-| UnsafeShell.py             | Command Injection                         | Alta    |
+| [BrokenAuth.java](samples/source/BrokenAuth.java)            | Broken Authentication                     | Alta    |
+| [InsecureCSRFHandler.cs](samples/source/InsecureCSRFHandler.cs)     | Cross-Site Request Forgery (CSRF)         | Alta    |
+| [InsecureDeserialization.py](samples/source/InsecureDeserialization.py) | Insecure Deserialization                  | Alta    |
+| [SensitiveDataExposure.c](samples/source/SensitiveDataExposure.c)    | Cryptographic Failures                    | Media   |
+| [SqlInjection.java](samples/source/SqlInjection.java)          | Injection (SQLi)                          | Alta    |
+| [UnvalidatedRedirect.java](samples/source/UnvalidatedRedirect.java)   | Unvalidated Redirects                     | Media   |
+| [UnsafeArray.c](samples/source/UnsafeArray.c)              | Buffer Overflow / Memory Corruption       | Alta    |
+| [UnsafeInput.c](samples/source/UnsafeInput.c)              | Improper Input\Validation                 | Media   |
+| [UnsafeSerialization.java](samples/source/UnsafeSerialization.java)   | Insecure Deserialization                  | Alta    |
+| [UnsafeShell.py](samples/source/UnsafeShell.py)             | Command Injection                         | Alta    |
 
 Comando per scansione directory:
 ```console
@@ -278,7 +278,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 Risultati scansione file style.css del sito  https://vamoruso.github.io/SecurityMonsterAI/:
 ![Risultati scansione](https://raw.githubusercontent.com/vamoruso/SecurityMonsterAI/main/assets/1767452572.png)
 
-
+Screenshots :
 <table>
 <tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/source/screen1_source_analisi.png" style="width: 50%; height: 50%" /> </td>
@@ -309,8 +309,8 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --ty
 | Tattica MITRE ATT&CK       | Descrizione                                                                 | Gravità  | File simulato                             |
 |----------------------------|-----------------------------------------------------------------------------|----------|-------------------------------------------|
 | **Reconnaissance**         | Raccolta di informazioni sul target (domini, IP, servizi esposti).         | Media    | [`01_Reconnaissance.txt`](samples/log/mitre_list/01_Reconnaissance.log)                   |
-| **Resource Development**   | Preparazione di risorse per l’attacco (domini, malware, credenziali).      | Media    | [`02_Resource Development.log`(samples/log/mitre_list/02_Resource%20Development.log)             |
-| **Initial Access**         | Primo ingresso nel sistema tramite phishing, exploit o credenziali rubate. | Alta     | [`03_Initial Access.pcap`(samples/log/mitre_list/03_Initial%20Access.pcap)                  |
+| **Resource Development**   | Preparazione di risorse per l’attacco (domini, malware, credenziali).      | Media    | [`02_Resource Development.log`](samples/log/mitre_list/02_Resource%20Development.log)             |
+| **Initial Access**         | Primo ingresso nel sistema tramite phishing, exploit o credenziali rubate. | Alta     | [`03_Initial Access.pcap`](samples/log/mitre_list/03_Initial%20Access.pcap)                  |
 | **Execution**              | Esecuzione di codice malevolo su sistema compromesso.                      | Alta     | [`04_PowerShell script execution.evtx`](samples/log/mitre_list/04_PowerShell%20script%20execution.evtx)     |
 | **Persistence**            | Mantenimento dell’accesso dopo reboot o cambio credenziali.                | Alta     | [`05_Persistence.evtx`](samples/log/mitre_list/05_Persistence.evtx)                     |
 | **Privilege Escalation**   | Acquisizione di permessi elevati (admin/root).                             | Alta     | [`06_Privilege Escalation.evtx`](samples/log/mitre_list/06_Privilege%20Escalation.evtx)            |
@@ -345,7 +345,7 @@ Risultati scansione  file di log della cartella samples/log/mitre_list:
 | **Attacchi rilevati**     | **13/14 → 93%** | **13/14 → 93%** | **10/14 → 72%** |
 
 
-
+Screenshots :
 <table>
    <tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/logs/analisi_log_screen1_avvio.png" style="width: 50%; height: 50%" /> </td>
@@ -375,6 +375,67 @@ Risultati scansione  file di log della cartella samples/log/mitre_list:
 ---
     
 ### SecurityMonster analisi binary ed eseguibili
+
+#### Tabella 6.1: Tattiche MITRE ATT&CK simulate in file didattici
+
+| Tattica MITRE         | Descrizione breve                                                                 | Gravità   | Nome file (estensioni)                     |
+|------------------------|-----------------------------------------------------------------------------------|-----------|--------------------------------------------|
+| Initial Access         | Test standard riconosciuto da tutti gli antivirus (es. EICAR)                     | Alta      | [`eicar.exe`](samples/binary/bin_source/eicar_pe.c)                                |
+| Defense Evasion        | Simulazione packer (UPX-like), offuscamento e sezione sospetta                   | Alta      | `PackerLike.*`](samples/binary/bin_source/PackerLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Defense Evasion        | Simulazione tecniche di evasione (nomi sezioni sospetti, entropia alta)          | Critica   | `EvasionLike.*`](samples/binary/bin_source/EvasionLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Impact                 | Simulazione ransomware (stringhe AES, crittografia, ransom note)                 | Critica   | `RansomwareLikeAES.*`](samples/binary/bin_source/RansomwareLikeAES.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+| Persistence            | Comportamento tipico trojan (dropper, injection simulata)                        | Alta      | `TrojanLike.*`](samples/binary/bin_source/TrojanLike.c) (`.exe`, `.dll`, `.so`, `.o`, `.a`) |
+
+#### Tabella 6.2: Riepilogo rilevazioni Packer della pipeline
+
+| Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
+|-----------------------------|:----:|:------:|:------:|:----:|:-----:|
+| **ClamAV**                  | ✗    | ✗      | ✗      | ✗    | ✗     |
+| **YARA**                    | ✗    | ✗      | ✔      | ✗    | ✔     |
+| **LIEF + AI (Gemma3)**      | N/A  | N/A    | N/A    | ✔    | ✗     |
+| **LIEF + AI (Llama3)**      | N/A  | N/A    | ✔      | ✗    | ✔     |
+| **LIEF + AI (Mistral)**     | N/A  | N/A    | ✗      | ✔    | ✗     |
+| **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✔     |
+| **R2 e r2ai**               | ✗    | ✔      | ✔      | ✗    | ✔     |
+
+#### Tabella 6.3: Riepilogo rilevazioni Evasion della pipeline
+
+| Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
+|-----------------------------|:----:|:------:|:------:|:----:|:-----:|
+| **ClamAV**                  | ✗    | ✗      | ✗      | ✗    | ✗     |
+| **YARA**                    | ✗    | ✗      | ✔      | ✗    | ✔     |
+| **LIEF + AI (Gemma3)**      | N/A  | N/A    | N/A    | ✗    | ✗     |
+| **LIEF + AI (Llama3)**      | N/A  | N/A    | ✗      | ✗    | ✗     |
+| **LIEF + AI (Mistral)**     | N/A  | N/A    | ✗      | ✗    | N/A   |
+| **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✔     |
+| **R2 e r2ai**               | ✗    | ✔      | ✔      | ✗    | ✔     |
+
+#### Tabella 6.4: Riepilogo rilevazioni Impact/Ransomware della pipeline
+
+| Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
+|-----------------------------|:----:|:------:|:------:|:----:|:-----:|
+| **ClamAV**                  | ✗    | ✗      | ✗      | ✗    | ✗     |
+| **YARA**                    | ✗    | ✗      | ✔      | ✗    | ✗     |
+| **LIEF + AI (Gemma3)**      | N/A  | N/A    | N/A    | ✔    | ✔     |
+| **LIEF + AI (Llama3)**      | N/A  | N/A    | ✔      | ✔    | ✔     |
+| **LIEF + AI (Mistral)**     | N/A  | N/A    | ✗      | ✔    | ✗     |
+| **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✗    | ✔     |
+| **R2 e r2ai**               | ✗    | ✗      | ✔      | ✗    | ✔     |
+
+#### Tabella 6.5: Riepilogo rilevazioni Persistence/Trojan della pipeline
+
+| Componente / Estensione     | `.a` | `.dll` | `.exe` | `.o` | `.so` |
+|-----------------------------|:----:|:------:|:------:|:----:|:-----:|
+| **ClamAV**                  | ✗    | ✗      | ✗      | ✗    | ✗     |
+| **YARA**                    | ✗    | ✗      | ✔      | ✗    | ✗     |
+| **LIEF + AI (Gemma3)**      | N/A  | N/A    | N/A    | ✗    | ✗     |
+| **LIEF + AI (Llama3)**      | N/A  | N/A    | ✗      | ✗    | ✗     |
+| **LIEF + AI (Mistral)**     | N/A  | N/A    | ✗      | ✗    | N/A   |
+| **R2 e MalwareDetector.py** | ✗    | ✔      | ✔      | ✔    | ✗     |
+| **R2 e r2ai**               | ✗    | ✗      | ✔      | ✔    | ✗     |
+
+
+Screenshots :
 <table>
 <tr>
 <td><img src="https://github.com/vamoruso/SecurityMonsterAI/blob/main/screenshoots/binary/01_avvio_eicar_pe.png" style="width: 50%; height: 50%"/> </td> 
