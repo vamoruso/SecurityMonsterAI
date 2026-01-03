@@ -127,7 +127,6 @@ Copiali nella directory dei plugin di Radare2:
 ## Tabelle e screenshots dei test effettuati
 
 ### 📄 SecurityMonster analisi codice sorgente
----
 #### Caso 1️⃣
 #### Tabella 4.1: Elenco vulnerabilità innestate – primo caso d'uso (file `test.js`)
 
