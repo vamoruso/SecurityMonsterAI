@@ -6,7 +6,7 @@
 ### Questo repository è collegato al progetto software per la tesi di laurea magistrale di Vincenzo Amoruso dell'AA 2025/26 della **Universitas Mercatorum**
 ### Corso di laurea in : ***Cybersecurity LM-66***
 ### Relatore : ***Prof. Davide Berardi***
-### Insegnamento di : ***Cybersecuryty***
+### Insegnamento di : ***Cybersecurity***
 ### Titolo della tesi : ***Applicazione di Modelli Linguistici Locali nell’Analisi Predittiva delle Minacce Informatiche: Un Approccio basato sull’Intelligenza Artificiale***
 ### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecuiry alcune delle potenzialità della intelligenza artificiale.***
 
