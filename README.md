@@ -8,7 +8,7 @@
 ### Relatore : ***Prof. Davide Berardi***
 ### Insegnamento di : ***Cybersecurity***
 ### Titolo della tesi : ***Applicazione di Modelli Linguistici Locali nell’Analisi Predittiva delle Minacce Informatiche: Un Approccio basato sull’Intelligenza Artificiale***
-### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecuiry alcune delle potenzialità della intelligenza artificiale.***
+### Obiettivo: ***Il progetto applica con esempi pratici alla Cybersecurity alcune delle potenzialità della intelligenza artificiale.***
 
 ## Indice
 - [Security Monster AI](#security-monster-ai)
