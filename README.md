@@ -248,7 +248,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 > **Legenda**:  
 > ✔ = rilevato &nbsp; | &nbsp; ✗ = non rilevato &nbsp; | &nbsp; N/A = non applicabile
 
-#### Tabella 4.7: Riepilogo vulnerabilità innestatesito web contenente file `styles.css`
+#### Tabella 4.7: Riepilogo vulnerabilità innestate nel sito web contenente il file `styles.css`
 
 | ID | Descrizione                                                                 |
 |----|-----------------------------------------------------------------------------|
