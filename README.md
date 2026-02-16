@@ -190,7 +190,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan ../samples/source --type src
 ```
 #### Tabella 4.4: Riepilogo risultati scansione directory `samples/source`
 
-| Nome File                  | Qwen3-Coder | CodeLlama | Deepseek-Coder |
+| Nome File/Modello          | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |----------------------------|:-----------:|:---------:|:--------------:|
 | BrokenAuth.java            |      ✔      |     ✗     |        ✔       |
 | InsecureCSRFHandler.cs     |      ✔      |     ✔     |        ✔       |
@@ -232,7 +232,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  https://vamoruso.github.io/Sec
 
 #### Tabella 4.6: Riepilogo vulnerabilità scansione `vulnerable-utils.js`
 
-| Vulnerabilità                                      | Qwen3-Coder | CodeLlama | Deepseek-Coder |
+| Vulnerabilità/Modello                              | Qwen3-Coder | CodeLlama | Deepseek-Coder |
 |----------------------------------------------------|:-----------:|:---------:|:--------------:|
 | Reflected XSS                                      |      ✔      |     ✗     |        ✔       |
 | DOM-Based XSS                                      |      ✔      |     ✗     |        ✔       |
@@ -340,7 +340,7 @@ D:\SecurityMonster\dist>SecurityMonster.exe scan  ../samples/log/mitre_list --ty
 #### Risultati scansione  file di log della cartella samples/log/mitre_list:
 #### Tabella 5.2: Conteggio attacchi MITRE rilevati dai modelli
 
-| Tipo Attacco              | Gemma3:12b | Llama3:8b | Mistral:latest |
+| Tipo Attacco/Modello      | Gemma3:12b | Llama3:8b | Mistral:latest |
 |---------------------------|:----------:|:---------:|:--------------:|
 | Reconnaissance            | ✔          | ✔         | ✔              |
 | Resource Development      | ✔          | ✔         | ✗              |
